@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application title="Randonnées en Dordogne" mouseposition="false" logo="" help="mviewer_help.html" measuretools="true" exportpng="true" style="css/themes/crna.css" togglealllayersfromtheme="true"/>
+    <mapoptions maxzoom="19" projection="EPSG:3857" center="37263.77010759735,5620009.10189043" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+  
+    <baselayers style="default"><!-- style="default"||gallery" -->
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png" 
+            url="http://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+            visible="true" attribution="Map tiles by  &lt;a href='http://cartodb.com/attributions'>CartoDb &lt;/a>, under  &lt;a href='http://creativecommons.org/licenses/by/3.0/'>CC BY 3.0 &lt;/a>" />
+    </baselayers>     
+    <proxy url=""/>
+    <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban"/>
+    <searchparameters bbox="false" localities="false" features="true"/>  
+
+    <themes>
+        <theme name="Panneaux"  collapsed="false" id="panneaux" icon="fas fa-map-signs">
+            <layer id="directionnel"
+                name="Panneaux directionnels"
+                type="customlayer"
+                vectorlegend="true"
+                url="apps/rando_dordogne/customlayers/directionnel.js"
+                queryable="true"
+                fields="nom"
+                aliases="Nom"
+                visible="false"                
+                attribution="ep">
+                <template url="apps/rando_dordogne/templates/rando_boucle.mst"></template>
+            </layer>
+            <layer id="departrando"
+                name="Départ des randonnées"
+                type="customlayer"
+                vectorlegend="true"
+                url="apps/rando_dordogne/customlayers/departrando.js"
+                fields="nom"
+                aliases="Nom"
+                visible="true"               
+                attribution="ep">
+                <template url="apps/rando_dordogne/templates/rando_boucle.mst"></template>
+            </layer>
+		</theme> 
+        <theme name="Randonnée"  collapsed="false" id="habitant" icon="fas fa-hiking">
+            <layer id="boucle"
+                name="Boucles balisées"
+                type="customlayer"
+                vectorlegend="true"
+                url="apps/rando_dordogne/customlayers/boucle.js"
+                queryable="true"
+                fields="nom"
+                aliases="Nom"
+                visible="true"                
+                searchable="true"
+                searchengine="fuse"
+                fusesearchkeys="nom"
+                fusesearchresult="{{nom}}"
+                tooltip="true"
+                infopanel="bottom-panel"
+                tooltipcontent="{{nom}}"
+                attribution="ep">
+                <template url="apps/rando_dordogne/templates/rando_boucle.mst"></template>
+            </layer>
+            <layer id="liaison"
+                name="Liaisons balisées"
+                type="customlayer"
+                vectorlegend="true"
+                url="apps/rando_dordogne/customlayers/liaison.js"
+                fields="nom"
+                aliases="Nom"
+                visible="true"               
+                attribution="ep">
+                <template url="apps/rando_dordogne/templates/rando_boucle.mst"></template>
+            </layer>
+		</theme>       
+    </themes>
+    <extensions>
+          <extension type="component" id="chartjs" path="apps/common/addon"/>
+    </extensions>
+</config>
