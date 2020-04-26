@@ -57,10 +57,11 @@
 		margin-bottom:15px;
 	}
 	#tableinformations img{
-		height:24px;
+		height:20px;
 	}
 	#tableinformations td{
 		font-size:16px;
+		font-family:"roboto_regular";
 	}
 	#tableinformations .imginfos{
 		display:block;
