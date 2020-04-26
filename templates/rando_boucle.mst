@@ -1,0 +1,129 @@
+{{#features}}
+<li class="item">
+	<div class="col-sm-4">
+	<center><h3 class="title-feature">{{nom}}</h3></center>
+	<center><h4 class="sub-title-feature">Informations</h4></center>
+	<center>
+	<table id="tableinformations">
+		<tbody>
+			<tr>
+				<td class="imginfos"><img src="apps/rando_dordogne/img/logo/route-loop.png" alt="Type"></td>
+				<td> {{type}}</td>
+				<td class="imginfos"><img src="apps/rando_dordogne/img/logo/length.png" alt="Distance"></td>
+				<td> {{km}} km</td>
+				<td class="imginfos"><img src="apps/rando_dordogne/img/logo/ascent.png" alt="dénivelé positif"></td>
+				<td> {{pos}} m</td>
+				<td class="imginfos"><img src="apps/rando_dordogne/img/logo/ascent.png" alt="dénivelé positif"></td>
+				<td> {{neg}} m</td>
+			</tr>
+		</tbody>
+	</table>
+	</center>
+	<center><h4 class="sub-title-feature">Accès</h4></center>
+			<span style="font-family:'roboto_bold'"> Trace GPS :</span> <a href="{{url}}" target="_Blank">Télécharger</a><br/>
+	</div>
+	<div class="col-sm-4">
+	<center><h4 class="sub-title-feature">Profil altimétrique</h4></center>
+		<canvas id="chart{{idrando}}"></canvas>
+	</div>
+	</li>
+{{/features}}
+<style>
+	.title-feature {
+		color: #52A53E;
+		font-family:"roboto_bold";
+		font-size:23px;
+		margin-bottom:1%;
+		line-height:1;
+	}
+	.sub-title-feature {
+		color: #032E46;
+		font-family:"roboto_bold";
+		font-size:20px;
+		margin-bottom:1%;
+		line-height:1;
+	}
+	.text-feature{
+		font-family:"roboto_regular";
+		color:#555;
+		font-size:13px;
+		margin-top:10%;
+	}
+	.sub-title{
+		color: #032E46;
+		font-family:"roboto_bold";
+	}
+	#tableinformations {
+		margin-bottom:15px;
+	}
+	#tableinformations img{
+		height:24px;
+	}
+	#tableinformations td{
+		font-size:16px;
+	}
+	#tableinformations .imginfos{
+		display:block;
+		margin-left:15px;
+		margin-right:5px;
+	}
+</style>
+<script>
+var rando = [];//création d'un tableau des plages (pour gérer plusieurs plages au clic) vide
+
+{{#features}}
+	rando.push('{{idrando}}'); //on rempli le tableau
+{{/features}}
+
+rando.forEach(function(item){//on boucle sur le tableau
+	console.log(item);
+	$.getJSON("apps/rando_dordogne/data/json_profil/"+item+".json", function (json) {
+		
+	var labels = json.map(function(e) {
+	return e.dist;
+	});
+	var data = json.map(function(e) {
+	return e.ele;
+	});
+	var ctx = document.getElementById("chart" + item);
+	var config = {
+	type: 'line',
+	data: {
+		labels: labels,
+		datasets: [{
+		label: 'Altitude',
+		data: data,
+		backgroundColor: 'rgba(0, 119, 204, 0.3)',
+		pointRadius: 0,
+		}]
+	},
+	options : {
+		scales: {
+			xAxes: [{
+				gridLines: {
+					display:false
+				},
+				ticks:{
+					autoSkip: true,
+					maxRotation:0,
+					maxTicksLimit:3
+				}
+			}],
+			yAxes: [{
+				gridLines: {
+					display:false
+				}   
+			}]
+		},
+		elements: {
+					line: {
+						tension: 0.6
+					}
+		},
+	},
+	};
+
+	var chart = new Chart(ctx, config);
+	});
+});
+</script>
