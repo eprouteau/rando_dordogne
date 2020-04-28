@@ -111,6 +111,11 @@ rando.forEach(function(item){//on boucle sur le tableau
 				}
 			}],
 			yAxes: [{
+				ticks: {
+					min: 0,
+					max: 400,
+					stepsize: 50
+				},
 				gridLines: {
 					display:false
 				}   
