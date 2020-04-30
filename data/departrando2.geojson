@@ -1,0 +1,402 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "departrando",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.7303856, 44.8044917 ]
+			},
+			"properties" : {
+				"photo" : "C:\\Users\\eprouteau\\Downloads\\20180422_123817.jpg",
+				"carte" : "Oui",
+				"nom" : "Bayac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.6731008, 44.8224756 ]
+			},
+			"properties" : {
+				"photo" : "C:\\Users\\eprouteau\\Downloads\\Photos (2)\\20191207_143531.jpg",
+				"carte" : "Oui",
+				"nom" : "Lanquais"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.7392973, 44.8375443 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Lallinde"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.395308, 45.0518197 ]
+			},
+			"properties" : {
+				"photo" : "DCIM/JPEG_20200330_203734.jpg",
+				"carte" : "Oui",
+				"nom" : "Sourzac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.403541, 45.0157745 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Bourgnac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.5863128, 45.0882653 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Manzac-sur-Vern"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.5394997, 45.0831799 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Grignols"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.4974291, 45.0706187 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Vallereuil"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.4761752, 45.0512531 ]
+			},
+			"properties" : {
+				"photo" : "DCIM/JPEG_20200329_170053.jpg",
+				"carte" : "Oui",
+				"nom" : "Saint-Severin-d'Estissac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.6528249, 45.0466289 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Grun-Bordas"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.5984793, 45.045119 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Bourrou"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.6469059, 45.0143369 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Saint-Mayme-de-Peyrerol"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.4922296, 45.1853008 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Saint-Aquilin"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.4445802, 45.1732904 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Chantérac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.7198217, 45.0284755 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Vergt"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.5100817, 45.0292883 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Saint-Jean-d'Estissac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.4155343, 45.085156 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Douzillac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.6619866, 45.079486 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Creyssensac-et-Pissot"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.607924, 45.2730291 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Bussac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.5481631, 44.9054752 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Queyssac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.3964313568, 45.1632929515 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Saint-Vincent-de-Connezac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.556376211, 45.1849173115 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Léguillac-de-l'Auche"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.5594330381, 45.225886809 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Mensignac"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.5760627414, 45.1497404095 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Montanceix"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.3465959899, 45.0438593391 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Saint-Médard-de-Mussidan"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.273819531, 44.9973901023 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Beaupouyet"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.2098120118, 45.0765726847 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Saint-Barthélemy-de-Bellegarde"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.2054456968, 45.0154277497 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Saint-Martial-d'Artenset"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.1653842269, 45.0090855745 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Montpon-Ménestérol"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.3593341122, 45.2607903319 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Villetoureix"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.2865033748, 45.2160696386 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Oui",
+				"nom" : "Vanxains"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.5900246808, 45.1340471559 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Non",
+				"nom" : null
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 0.3298387654, 45.0560732232 ]
+			},
+			"properties" : {
+				"photo" : null,
+				"carte" : "Non",
+				"nom" : null
+			}
+		}
+	]
+}

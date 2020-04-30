@@ -8,14 +8,19 @@
     "layers": [{
       "layerId": "boucle",
       "filter": [{
-          "attribut": "classes_km",
-          "type": "checkbox",
-          "label": "Distance"
+          "attribut": "secteur",
+          "type": "combobox",
+          "label": "Grand térritoire"
         },
         {
-          "attribut": "theme",
+          "attribut": "classes_km",
           "type": "checkbox",
-          "label": "Thèmes"
+          "label": "Grand térritoire"
+        },
+        {
+          "attribut": "type",
+          "type": "combobox",
+          "label": "Grand térritoire"
         }
       ]
     }]

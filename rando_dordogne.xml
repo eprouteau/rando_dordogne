@@ -33,7 +33,7 @@
                 url="apps/rando_dordogne/customlayers/departrando.js"
                 fields="nom"
                 aliases="Nom"
-                visible="true"               
+                visible="false"               
                 attribution="ep">
                 <template url="apps/rando_dordogne/templates/rando_boucle.mst"></template>
             </layer>
