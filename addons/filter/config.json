@@ -1,0 +1,23 @@
+{
+  "js": ["js/filter.js"],
+  "css": "css/filter.css",
+  "html": "filter.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "title": "filtrer",
+    "layers": [{
+      "layerId": "boucle",
+      "filter": [{
+          "attribut": "classes_km",
+          "type": "checkbox",
+          "label": "Distance"
+        },
+        {
+          "attribut": "theme",
+          "type": "checkbox",
+          "label": "Thèmes"
+        }
+      ]
+    }]
+  }
+}

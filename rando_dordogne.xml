@@ -12,8 +12,8 @@
     <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban"/>
     <searchparameters bbox="false" localities="false" features="true"/>  
 
-    <themes>
-        <theme name="Panneaux"  collapsed="false" id="panneaux" icon="fas fa-map-signs">
+    <themes mini="true">
+        <theme name="Panneaux"  collapsed="true" id="panneaux" icon="fas fa-map-signs">
             <layer id="directionnel"
                 name="Panneaux directionnels"
                 type="customlayer"
@@ -38,7 +38,7 @@
                 <template url="apps/rando_dordogne/templates/rando_boucle.mst"></template>
             </layer>
 		</theme> 
-        <theme name="Randonnée"  collapsed="false" id="habitant" icon="fas fa-hiking">
+        <theme name="Randonnée"  collapsed="true" id="habitant" icon="fas fa-hiking">
             <layer id="boucle"
                 name="Boucles balisées"
                 type="customlayer"
@@ -78,4 +78,5 @@
     <extensions>
           <extension type="component" id="chartjs" path="apps/common/addon"/>  
           <extension type="component" id="styleinfo" path="apps/rando_dordogne/addons"/></extensions>
+          <extension type="component" id="filter" path="apps/rando_dordogne/addons" />
 </config>

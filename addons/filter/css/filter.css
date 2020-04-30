@@ -1,0 +1,41 @@
+.advancedFilter{
+ background-color:#FFFFFF;
+ display:none;
+ text-align:left;
+ position: fixed;
+ top: 220px;
+ left: 60px;
+ padding: 5px 15px 2px;
+ max-width: 300px;
+}
+
+.advancedFilter h2{
+  font-size: 14px;
+  font-family: 'roboto_regular', Arial, Sans-serif;
+  margin-top: 0px;
+  text-align:center;
+}
+
+.advancedFilter label{
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.advancedFilter legend{
+  font-size: 13px;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.advancedFilter .form-check-label {
+    margin:4px;
+    background-color:#9DE0EF;
+    border-radius:4px;
+    padding : 4px;
+}
+
+.advancedFilter .form-check-label:hover {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+}
