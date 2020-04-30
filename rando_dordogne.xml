@@ -40,21 +40,18 @@
 		</theme> 
         <theme name="Randonnée"  collapsed="false" id="habitant" icon="fas fa-hiking">
             <layer id="boucle"
-                name="Boucles balisées"
+                name="Liaisons balisées"
                 type="customlayer"
                 vectorlegend="true"
                 url="apps/rando_dordogne/customlayers/boucle.js"
                 queryable="true"
                 fields="nom"
                 aliases="Nom"
-                visible="true"                
-                searchable="true"
-                searchengine="fuse"
-                fusesearchkeys="nom"
-                fusesearchresult="{{nom}}"
-                tooltip="true"
-                infopanel="bottom-panel"
-                tooltipcontent="{{nom}}"
+                visible="true"
+                infopanel="right-panel"
+                tooltip="false"
+                tooltipenable="false"
+                tooltipcontent=""               
                 attribution="ep">
                 <template url="apps/rando_dordogne/templates/rando_boucle.mst"></template>
             </layer>
@@ -75,6 +72,6 @@
 		</theme>       
     </themes>
     <extensions>
-          <extension type="component" id="chartjs" path="apps/common/addon"/>
-    </extensions>
+          <extension type="component" id="chartjs" path="apps/common/addon"/>  
+          <extension type="component" id="styleinfo" path="apps/rando_dordogne/addons"/></extensions>
 </config>
