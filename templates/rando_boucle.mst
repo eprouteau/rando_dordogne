@@ -1,47 +1,47 @@
 {{#features}}
 <li class="item">
-	<div class="roww" style="background-color:blue;height:auto;">
+	<div class="ligne">
 		<div class="col-xs-12">
 			<center><h3 class="title-feature">{{name}}</h3></center>
 		</div>
 	</div>
-	<div class="roww">
+	<div class="ligne">
 		<div class="col-xs-12">
 				<center><h4>Secteur {{secteur}}</h4></center>
 		</div>
 	</div>
-	<div class="roww">
+	<div class="ligne">
 		<div class="col-xs-12">
-			<center><h4 class="sub-title-feature">Informations</h4></center>
+			<h4 class="sub-title-feature"><i class="fas fa-info-circle"></i> Informations</h4>
 		</div>
 	</div>
-	<div class="roww">
+	<div class="ligne">
 		<div class="col-xs-3 text-center"><img src="apps/rando_dordogne/img/logo/route-loop.png" alt="Type" height="20"> {{type}}</div>
 		<div class="col-xs-3 text-center"><img src="apps/rando_dordogne/img/logo/length.png" alt="Distance" height="20"> {{km}} km</div>
 		<div class="col-xs-3 text-center"><img src="apps/rando_dordogne/img/logo/ascent.png" alt="dénivelé positif" height="20"> {{den_pos}} m</div>
 		<div class="col-xs-3 text-center"><img src="apps/rando_dordogne/img/logo/ascent.png" alt="dénivelé positif" height="20"> {{den_neg}} m</div>
 	</div>
-	<div class="roww">
+	<div class="ligne">
 		<div class="col-xs-12">
-			<center><h4 class="sub-title-feature">Accès</h4></center>
+			<h4 class="sub-title-feature"><i class="fas fa-car-alt"></i> Accès</h4>
 		</div>
 	</div>
-	<div class="roww">
+	<div class="ligne">
 		<div class="col-xs-12">
 			<span style="font-family:'roboto_bold'"> Coordonnées GPS (Départ) : </span>{{coordonnees_depart}}<br/>
 		</div>
 	</div>
-	<div class="roww">
+	<div class="ligne">
 		<div class="col-xs-12">
 			<span style="font-family:'roboto_bold'"> Commune de départ :</span>Télécharger<br/>
 		</div>
 	</div>
-	<div class="roww">
+	<div class="ligne">
 		<div class="col-xs-12">
-			<center><h4 class="sub-title-feature">Ressources</h4></center>
+			<h4 class="sub-title-feature"><i class="fas fa-map-marked-alt"></i> Ressources</h4>
 		</div>
 	</div>
-	<div class="roww">
+	<div class="contenu">
 		<div class="col-xs-6 text-center">
 			<img src="apps/rando_dordogne/img/logo/download.png" alt="GPX" height="30"> Trâce GPX
 		</div>
@@ -49,12 +49,12 @@
 			<img src="apps/rando_dordogne/img/logo/map.png" alt="fiche rando" height="30"> Fiche rando
 		</div>
 	</div>
-	<div class="roww">
+	<div class="ligne">
 		<div class="col-xs-12">
-			<center><h4 class="sub-title-feature">Profil altimétrique</h4></center>
+			<h4 class="sub-title-feature"><i class="fas fa-chart-area"></i> Profil altimétrique</h4>
 		</div>
 	</div>
-	<div class="roww">
+	<div class="ligne">
 		<div class="col-xs-12">
 			<canvas id="chart{{idrando}}"></canvas>
 		</div>
@@ -62,11 +62,12 @@
 	</li>
 {{/features}}
 <style>
-	.roww{
-		height:auto;
+	.ligne{
+		vertical-align:middle;
 	}
 	.text-center{
 		text-align:center;
+		margin-top:10px;
 	}
 	.title-feature {
 		color: #52A53E;
@@ -81,6 +82,14 @@
 		font-size:20px;
 		margin-bottom:1%;
 		line-height:1;
+		background-color:#91C374;
+		padding-top:5px;
+		padding-bottom:5px;
+		padding-left:10px;
+		color:white;
+    	vertical-align:middle; 
+    	display:table;
+    	width:100%;
 	}
 	.text-feature{
 		font-family:"roboto_regular";

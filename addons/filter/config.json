@@ -15,12 +15,12 @@
         {
           "attribut": "classes_km",
           "type": "checkbox",
-          "label": "Filtré par distance"
+          "label": "Filtrer par distance"
         },
         {
           "attribut": "classes_den_pos",
           "type": "checkbox",
-          "label": "Filtré par dénivelé +"
+          "label": "Filtrer par dénivelé +"
         }
       ]
     }]
