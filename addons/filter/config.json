@@ -10,17 +10,17 @@
       "filter": [{
           "attribut": "secteur",
           "type": "combobox",
-          "label": "Grand térritoire"
+          "label": "Filtrer par secteur"
         },
         {
           "attribut": "classes_km",
           "type": "checkbox",
-          "label": "Grand térritoire"
+          "label": "Filtré par distance"
         },
         {
-          "attribut": "type",
-          "type": "combobox",
-          "label": "Grand térritoire"
+          "attribut": "classes_den_pos",
+          "type": "checkbox",
+          "label": "Filtré par dénivelé +"
         }
       ]
     }]
