@@ -5,7 +5,7 @@
   "target": "page-content-wrapper",
   "options": {
     "title": "filtrer",
-    "open": true,
+    "open": false,
     "zoomOnFeatures": true,
     "layers": [{
       "layerId": "boucle",
@@ -16,6 +16,12 @@
         },
         {
           "attribut": "classes_km",
+          "type": "button",
+          "label": "Service",
+          "updateOnChange": true
+        },
+        {
+          "attribut": "classes_den_pos",
           "type": "button",
           "label": "Service",
           "updateOnChange": true
