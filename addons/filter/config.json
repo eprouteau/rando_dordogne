@@ -5,22 +5,27 @@
   "target": "page-content-wrapper",
   "options": {
     "title": "filtrer",
+    "open": true,
+    "zoomOnFeature": true,
     "layers": [{
       "layerId": "boucle",
       "filter": [{
           "attribut": "secteur",
           "type": "combobox",
-          "label": "Filtrer par secteur"
+          "label": "Secteur",
+          "updateOnChange": true
         },
         {
           "attribut": "classes_km",
-          "type": "checkbox",
-          "label": "Filtrer par distance"
+          "type": "button",
+          "label": "Distance",
+          "updateOnChange": true
         },
         {
           "attribut": "classes_den_pos",
-          "type": "checkbox",
-          "label": "Filtrer par dénivelé +"
+          "type": "button",
+          "label": "Dénivelé",
+          "updateOnChange": true
         }
       ]
     }]
