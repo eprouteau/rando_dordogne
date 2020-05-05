@@ -6,25 +6,18 @@
   "options": {
     "title": "filtrer",
     "open": true,
-    "zoomOnFeature": true,
+    "zoomOnFeatures": true,
     "layers": [{
       "layerId": "boucle",
       "filter": [{
           "attribut": "secteur",
           "type": "combobox",
-          "label": "Secteur",
-          "updateOnChange": true
+          "label": "Grand térritoire"
         },
         {
           "attribut": "classes_km",
           "type": "button",
-          "label": "Distance",
-          "updateOnChange": true
-        },
-        {
-          "attribut": "classes_den_pos",
-          "type": "button",
-          "label": "Dénivelé",
+          "label": "Service",
           "updateOnChange": true
         }
       ]
