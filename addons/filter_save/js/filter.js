@@ -13,12 +13,6 @@ var filter = (function() {
   var _visibleFeatures = new Map();
 
   /**
-   *  Property: _currentSelectedLayer
-   *  @type {String}
-   */
-  var _currentSelectedLayer = "";
-
-  /**
    * Public Method: _initFilterTool exported as init
    *
    */
@@ -26,29 +20,12 @@ var filter = (function() {
 
     var layerParams = mviewer.customComponents.filter.config.options.layers;
     var layerId = "";
-    var nbLayers = 0;
 
     layerParams.forEach(layer => {
       layerId = layer.layerId;
       // Should never happens but we could check if layer.id not already exist in _layersParams
       _layersFiltersParams.set(layerId, layer.filter);
       _visibleFeatures.set(layerId, []);
-
-      nbLayers++;
-      if (nbLayers == 1) {
-        _currentSelectedLayer=layerId;
-        // wait until at least one layer is load before create filter panel
-        mviewer.getLayer(layerId).layer.once('change', function(e) {
-          _manageFilterPanel();
-          if (mviewer.customComponents.filter.config.options.open) {
-            $("#advancedFilter").show();
-          }
-          $('#advancedFilter').easyDrag({
-            'handle': 'h2'
-          });
-        });
-      }
-
     });
 
     if (_layersFiltersParams.size > 0) {
@@ -62,6 +39,14 @@ var filter = (function() {
         '</button>'
       ].join("");
       $("#toolstoolbar").prepend(button);
+
+      // wait until at least one layer is load before create filter panel
+      mviewer.getLayer(layerId).layer.once('change', function(e) {
+        _manageFilterPanel();
+        if(mviewer.customComponents.filter.config.options.open){
+          $("#advancedFilter").show();
+        }
+      });
     }
   };
 
@@ -88,14 +73,6 @@ var filter = (function() {
    */
   var _manageFilterPanel = function() {
 
-    var nbLayers = _layersFiltersParams.size;
-
-    var contentSelectLayer = ['<div class="form-group mb-2 mr-sm-2">',
-      '<legend>Choix de la couche</legend>',
-      '<select id="select-FilterLayer" class="form-control" onchange="filter.selectLayer(this)">'
-    ];
-
-    var indexLayerId = 0;
     // Parse all layers to get params
     for (var [layerId, params] of _layersFiltersParams) {
 
@@ -104,14 +81,6 @@ var filter = (function() {
 
       // Create div only if not exist
       if (!$('#' + destinationDivId).length) {
-
-        // add selectBox if needed
-        var content = "";
-        if (nbLayers > 1 && indexLayerId == 0) {
-          contentSelectLayer.push('<option selected="selected">' + layerId + '</option>');
-        } else if (nbLayers > 1) {
-          contentSelectLayer.push('<option >' + layerId + '</option>');
-        }
         $("#advancedFilter").append('<div id="' + destinationDivId + '" "></div>');
       }
 
@@ -134,26 +103,9 @@ var filter = (function() {
           _manageDateFilter(destinationDivId, layerId, params[index]);
         }
       }
-      if(layerId != _currentSelectedLayer){
-        $("#" + destinationDivId).hide();
-      }
-      indexLayerId++;
-    }
-
-    if (nbLayers > 1 && !$('#select-FilterLayer').length) {
-      contentSelectLayer.push('</select></div>');
-      $("#selectLayerFilter").append(contentSelectLayer.join(''));
     }
   };
 
-  /**
-   *
-   */
-  var _selectLayer = function(element) {
-    $("#advancedFilter-" + _currentSelectedLayer).hide();
-    _currentSelectedLayer = element.value;
-    $("#advancedFilter-" + _currentSelectedLayer).show();
-  };
 
   /**
    * Private Method: _updateDistinctValues for a layer
@@ -185,22 +137,22 @@ var filter = (function() {
         features.forEach(feature => {
 
           // If feature is visible and value not null
-          if ((visibleFeatures.length == 0 || visibleFeatures.includes(feature.getId())) && !_isEmpty(feature.get(layerFiltersParams[index].attribut))) {
+          if ((visibleFeatures.length == 0 || visibleFeatures.includes(feature.getId())) && feature.get(layerFiltersParams[index].attribut) != null) {
 
             // for date type
             if (layerFiltersParams[index].type == "date") {
 
-              if (!_isEmpty(layerFiltersParams[index].attribut[0]) && !_isEmpty(layerFiltersParams[index].attribut[0])) {
-                var startDate = _stringToDate(feature.get(layerFiltersParams[index].attribut[0]));
-                var endDate = _stringToDate(feature.get(layerFiltersParams[index].attribut[1]));
+                if(!_isEmpty(layerFiltersParams[index].attribut[0]) && !_isEmpty(layerFiltersParams[index].attribut[0])){
+                  var startDate = _stringToDate(feature.get(layerFiltersParams[index].attribut[0]));
+                  var endDate = _stringToDate(feature.get(layerFiltersParams[index].attribut[1]));
 
-                if (layerFiltersParams[index].availableValues.length == 0 || startDate <= layerFiltersParams[index].availableValues[O]) {
-                  layerFiltersParams[index].availableValues[O] = startDate;
+                  if( layerFiltersParams[index].availableValues.length ==  0 || startDate <= layerFiltersParams[index].availableValues[O]){
+                    layerFiltersParams[index].availableValues[O] = startDate;
+                  }
+                  if( layerFiltersParams[index].availableValues.length ==  0 || endDate <= layerFiltersParams[index].availableValues[O]){
+                    layerFiltersParams[index].availableValues[1] = endDate;
+                  }
                 }
-                if (layerFiltersParams[index].availableValues.length == 0 || endDate <= layerFiltersParams[index].availableValues[O]) {
-                  layerFiltersParams[index].availableValues[1] = endDate;
-                }
-              }
             } else {
               // if needed, split values with ; Feature values can be one String separate by ;
               // TODO see if separator need to be put in config
@@ -420,9 +372,9 @@ var filter = (function() {
     });
 
     $("#" + id).on('changeDate', function(event) {
-      if (typeof(event.date) == "undefined") {
+      if(typeof(event.date) == "undefined"){
         _removeFilterElementFromList(layerId, params.attribut, null);
-      } else {
+      }else{
         _addFilterElementToList(layerId, params.attribut, event.date, "date");
       }
       _filterFeatures(layerId);
@@ -495,9 +447,10 @@ var filter = (function() {
 
       // If attribut exist add new value to existing one
       layerFiltersParams.forEach(function(filter, index, array) {
-        if (filter.attribut == attribut && value != null && type == "date") {
-          filter.currentValues[0] = value;
-        } else if (filter.attribut == attribut && value != null && !filter.currentValues.includes(value)) {
+        if(filter.attribut == attribut && value != null && type == "date"){
+            filter.currentValues[0] = value;
+        }
+        else if (filter.attribut == attribut && value != null && !filter.currentValues.includes(value)) {
           filter.currentValues.push(value);
           filter.currentRegexValues.push(value.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'));
         }
@@ -597,7 +550,6 @@ var filter = (function() {
 
   /**
    * Private Method: _filterFeature
-   * @param {String} layerId Id of layer that should be filtered
    *
    **/
   var _filterFeatures = function(layerId) {
@@ -605,18 +557,14 @@ var filter = (function() {
     var _layerFiltersParams = _layersFiltersParams.get(layerId);
     var featuresToBeFiltered = mviewer.getLayer(layerId).layer.getSource().getFeatures();
     var newVisibleFeatures = [];
-
-    // if zoomOnFeatures enable create an empty extent
-    if (mviewer.customComponents.filter.config.options.zoomOnFeatures) {
-      var extent = ol.extent.createEmpty();
-    }
+    var extent = ol.extent.createEmpty();
 
     featuresToBeFiltered.forEach(feature => {
 
       var hideFeature = false;
       var atLeastOneFilter = false;
 
-      //search if value exist un _layerFiltersParams
+      //search if value exist un currentFilters
       _layerFiltersParams.forEach(function(filter, index, array) {
 
         // Only if there is a filter
@@ -642,29 +590,29 @@ var filter = (function() {
         feature.setStyle(null);
         newVisibleFeatures.push(feature.getId());
         // Extend creation if zoomOnFeatures enable
-        if (mviewer.customComponents.filter.config.options.zoomOnFeatures) {
-          ol.extent.extend(extent, feature.getGeometry().getExtent());
+        if(mviewer.customComponents.filter.config.options.zoomOnFeatures){
+          ol.extent.extend(extent,feature.getGeometry().getExtent());
         }
       }
     });
     _visibleFeatures.set(layerId, newVisibleFeatures);
     // zoom on features
-    if (mviewer.customComponents.filter.config.options.zoomOnFeatures) {
+    if(mviewer.customComponents.filter.config.options.zoomOnFeatures){
 
       if (!ol.extent.isEmpty(extent)) {
-        // add buffer arround extent
-        var bufferedExtent = ol.extent.buffer(extent, ol.extent.getWidth(extent) / 2);
-        mviewer.getMap().getView().fit(bufferedExtent);
+          // add buffer arround extent
+          var bufferedExtent = ol.extent.buffer(extent, ol.extent.getWidth(extent)/2);
+          mviewer.getMap().getView().fit(bufferedExtent);
       }
     }
     _manageFilterPanel(layerId);
   };
 
   /**
-   *
-   */
+  *
+  */
   var _isDateInPeriod = function(wantedDate, startDate, endDate) {
-    if (_stringToDate(startDate) <= wantedDate && _stringToDate(endDate) >= wantedDate) {
+    if (_stringToDate(startDate) <= wantedDate && _stringToDate(endDate) >= wantedDate){
       return true;
     }
     return false;
@@ -672,8 +620,8 @@ var filter = (function() {
   };
 
   /**
-   *
-   */
+  *
+  */
   var _isValueInFeaturePropertie = function(wantedValues, featurePropertie) {
     var isInValue = false;
 
@@ -751,8 +699,7 @@ var filter = (function() {
     toggle: _toggle,
     filterFeatures: _filterFeatures,
     onValueChange: _onValueChange,
-    clearFilter: _clearFilter,
-    selectLayer: _selectLayer
+    clearFilter: _clearFilter
   };
 
 })();

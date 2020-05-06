@@ -1,32 +1,54 @@
 {
-  "js": ["js/filter.js"],
+  "js": ["js/filter.js", "js/jquery.easyDrag.min.js"],
   "css": "css/filter.css",
   "html": "filter.html",
   "target": "page-content-wrapper",
   "options": {
     "title": "filtrer",
-    "open": false,
+    "open": true,
     "zoomOnFeatures": true,
     "layers": [{
       "layerId": "boucle",
       "filter": [{
           "attribut": "secteur",
           "type": "combobox",
-          "label": "Grand térritoire"
-        },
-        {
-          "attribut": "classes_km",
-          "type": "button",
-          "label": "Service",
-          "updateOnChange": true
+          "label": "Secteur"
         },
         {
           "attribut": "classes_den_pos",
           "type": "button",
-          "label": "Service",
+          "label": "Dénivelé",
+          "updateOnChange": true
+        },
+        {
+          "attribut": "classes_km",
+          "type": "button",
+          "label": "Distance",
+          "updateOnChange": true
+        },
+        {
+          "attribut": "theme",
+          "type": "button",
+          "label": "Thèmes",
           "updateOnChange": true
         }
       ]
-    }]
+    },
+    {
+      "layerId": "liaison",
+      "filter": [{
+          "attribut": "type",
+          "type": "combobox",
+          "label": "Type"
+        },
+        {
+          "attribut": "nom",
+          "type": "textbox",
+          "label": "Nom",
+          "updateOnChange": true
+        }
+      ]
+    }
+    ]
   }
 }
