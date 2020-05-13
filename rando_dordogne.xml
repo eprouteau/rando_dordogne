@@ -18,7 +18,7 @@
                 name="Panneaux directionnels"
                 type="customlayer"
                 vectorlegend="true"
-                url="apps/rando_dordogne/customlayers/poi.js"
+                url="apps/rando_dordogne/customlayers/directionnel.js"
                 queryable="true"
                 fields="nom"
                 aliases="Nom"

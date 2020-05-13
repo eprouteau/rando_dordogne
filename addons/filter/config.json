@@ -12,43 +12,21 @@
       "filter": [{
           "attribut": "secteur",
           "type": "combobox",
-          "label": "Secteur"
+          "label": "Grand térritoire"
         },
         {
           "attribut": "classes_den_pos",
           "type": "button",
-          "label": "Dénivelé",
+          "label": "Service",
           "updateOnChange": true
         },
         {
           "attribut": "classes_km",
           "type": "button",
-          "label": "Distance",
-          "updateOnChange": true
-        },
-        {
-          "attribut": "theme",
-          "type": "button",
-          "label": "Thèmes",
+          "label": "Nature de baignade",
           "updateOnChange": true
         }
       ]
-    },
-    {
-      "layerId": "liaison",
-      "filter": [{
-          "attribut": "type",
-          "type": "combobox",
-          "label": "Type"
-        },
-        {
-          "attribut": "nom",
-          "type": "textbox",
-          "label": "Nom",
-          "updateOnChange": true
-        }
-      ]
-    }
-    ]
+    }]
   }
 }
