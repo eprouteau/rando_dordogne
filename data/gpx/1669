@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:28:15+02:00</time>
+		<bounds minlat="45.153388800019094" minlon="0.2850849" maxlat="45.155419" maxlon="0.2873198"/>
+	</metadata>
+	<trk>
+		<name>Petite promenade</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="45.15532840001908" lon="0.2850849"/>
+			<trkpt lat="45.155354600019088" lon="0.2853736"/>
+		</trkseg>
+		<trkseg>
+			<trkpt lat="45.155354600019088" lon="0.2853736"/>
+			<trkpt lat="45.155388800019082" lon="0.2855744"/>
+			<trkpt lat="45.155407" lon="0.2860964"/>
+			<trkpt lat="45.155419" lon="0.2863428"/>
+			<trkpt lat="45.155415400019066" lon="0.2870931"/>
+			<trkpt lat="45.155415400019066" lon="0.2872466"/>
+			<trkpt lat="45.155414500019077" lon="0.2872921"/>
+		</trkseg>
+		<trkseg>
+			<trkpt lat="45.155414500019077" lon="0.2872921"/>
+			<trkpt lat="45.155327900019088" lon="0.287308"/>
+			<trkpt lat="45.155020400019083" lon="0.2873198"/>
+			<trkpt lat="45.154657200019095" lon="0.2872662"/>
+			<trkpt lat="45.154422700019083" lon="0.2872447"/>
+			<trkpt lat="45.154051900019084" lon="0.2872447"/>
+			<trkpt lat="45.153696300019085" lon="0.2871803"/>
+			<trkpt lat="45.153628200019085" lon="0.2865366"/>
+			<trkpt lat="45.153428900019087" lon="0.2854627"/>
+			<trkpt lat="45.153388800019094" lon="0.2852399"/>
+		</trkseg>
+		<trkseg>
+			<trkpt lat="45.153388800019094" lon="0.2852399"/>
+			<trkpt lat="45.153455800019081" lon="0.2852442"/>
+			<trkpt lat="45.153577100019078" lon="0.2852192"/>
+			<trkpt lat="45.154073300019078" lon="0.2851942"/>
+			<trkpt lat="45.154608700019061" lon="0.2851799"/>
+			<trkpt lat="45.155024900019072" lon="0.2851836"/>
+			<trkpt lat="45.155226200019079" lon="0.285262"/>
+			<trkpt lat="45.155354600019088" lon="0.2853736"/>
+		</trkseg>
+	</trk>
+</gpx>

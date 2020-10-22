@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:25:59+02:00</time>
+		<bounds minlat="44.68159" minlon="0.35603" maxlat="44.68698" maxlon="0.35961"/>
+	</metadata>
+	<trk>
+		<name>Sentier d'interprétation du Lac de L'Escourou</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="44.68164" lon="0.35643"/>
+			<trkpt lat="44.68183" lon="0.35621"/>
+			<trkpt lat="44.68195" lon="0.3561"/>
+			<trkpt lat="44.68206" lon="0.35604"/>
+			<trkpt lat="44.68217" lon="0.35603"/>
+			<trkpt lat="44.6823" lon="0.35606"/>
+			<trkpt lat="44.68239" lon="0.35612"/>
+			<trkpt lat="44.68247" lon="0.35623"/>
+			<trkpt lat="44.68254" lon="0.35643"/>
+			<trkpt lat="44.68265" lon="0.3569"/>
+			<trkpt lat="44.68275" lon="0.35721"/>
+			<trkpt lat="44.68286" lon="0.35746"/>
+			<trkpt lat="44.68299" lon="0.3579"/>
+			<trkpt lat="44.68309" lon="0.35809"/>
+			<trkpt lat="44.68318" lon="0.35816"/>
+			<trkpt lat="44.68332" lon="0.35823"/>
+			<trkpt lat="44.6835" lon="0.35826"/>
+			<trkpt lat="44.6838" lon="0.35825"/>
+			<trkpt lat="44.68412" lon="0.35835"/>
+			<trkpt lat="44.68453" lon="0.35856"/>
+			<trkpt lat="44.68474" lon="0.3586"/>
+			<trkpt lat="44.68492" lon="0.3586"/>
+			<trkpt lat="44.68513" lon="0.35856"/>
+			<trkpt lat="44.68562" lon="0.35833"/>
+			<trkpt lat="44.686" lon="0.35818"/>
+			<trkpt lat="44.68612" lon="0.35819"/>
+			<trkpt lat="44.68623" lon="0.35824"/>
+			<trkpt lat="44.68635" lon="0.35834"/>
+			<trkpt lat="44.68647" lon="0.3585"/>
+			<trkpt lat="44.6867" lon="0.3589"/>
+			<trkpt lat="44.68693" lon="0.35945"/>
+			<trkpt lat="44.68698" lon="0.35961"/>
+			<trkpt lat="44.68681" lon="0.35917"/>
+			<trkpt lat="44.6867" lon="0.3589"/>
+			<trkpt lat="44.68657" lon="0.35869"/>
+			<trkpt lat="44.68635" lon="0.35834"/>
+			<trkpt lat="44.68623" lon="0.35824"/>
+			<trkpt lat="44.68612" lon="0.35819"/>
+			<trkpt lat="44.686" lon="0.35818"/>
+			<trkpt lat="44.68583" lon="0.35823"/>
+			<trkpt lat="44.68537" lon="0.35845"/>
+			<trkpt lat="44.68513" lon="0.35856"/>
+			<trkpt lat="44.68492" lon="0.3586"/>
+			<trkpt lat="44.68474" lon="0.3586"/>
+			<trkpt lat="44.68457" lon="0.35858"/>
+			<trkpt lat="44.68412" lon="0.35835"/>
+			<trkpt lat="44.6838" lon="0.35825"/>
+			<trkpt lat="44.6835" lon="0.35826"/>
+			<trkpt lat="44.68332" lon="0.35823"/>
+			<trkpt lat="44.68318" lon="0.35816"/>
+			<trkpt lat="44.68309" lon="0.35809"/>
+			<trkpt lat="44.68299" lon="0.3579"/>
+			<trkpt lat="44.68286" lon="0.35746"/>
+			<trkpt lat="44.68275" lon="0.35721"/>
+			<trkpt lat="44.68265" lon="0.3569"/>
+			<trkpt lat="44.68253" lon="0.35636"/>
+			<trkpt lat="44.68247" lon="0.35623"/>
+			<trkpt lat="44.68239" lon="0.35612"/>
+			<trkpt lat="44.6823" lon="0.35606"/>
+			<trkpt lat="44.68217" lon="0.35603"/>
+			<trkpt lat="44.68206" lon="0.35604"/>
+			<trkpt lat="44.68195" lon="0.3561"/>
+			<trkpt lat="44.68172" lon="0.35633"/>
+			<trkpt lat="44.68159" lon="0.35653"/>
+		</trkseg>
+	</trk>
+</gpx>

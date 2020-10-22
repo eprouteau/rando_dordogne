@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:18:42+02:00</time>
+		<bounds minlat="45.1829" minlon="0.07613" maxlat="45.19061" maxlon="0.09699"/>
+	</metadata>
+	<trk>
+		<name>Boucle de Puymangou</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="45.19051" lon="0.07613">
+				<ele>118.7773</ele>
+			</trkpt>
+			<trkpt lat="45.1903" lon="0.07658">
+				<ele>121.2764</ele>
+			</trkpt>
+			<trkpt lat="45.19037" lon="0.07738">
+				<ele>126.8109</ele>
+			</trkpt>
+			<trkpt lat="45.19031" lon="0.07809">
+				<ele>130.32499999999999</ele>
+			</trkpt>
+			<trkpt lat="45.19044" lon="0.08055">
+				<ele>127.3918</ele>
+			</trkpt>
+			<trkpt lat="45.19026" lon="0.08108">
+				<ele>124.7786</ele>
+			</trkpt>
+			<trkpt lat="45.18981" lon="0.08208">
+				<ele>117.72920000000001</ele>
+			</trkpt>
+			<trkpt lat="45.18904" lon="0.08341">
+				<ele>112.3283</ele>
+			</trkpt>
+			<trkpt lat="45.18836" lon="0.08452">
+				<ele>112.10169999999999</ele>
+			</trkpt>
+			<trkpt lat="45.18753" lon="0.08559">
+				<ele>115.2807</ele>
+			</trkpt>
+			<trkpt lat="45.18692" lon="0.08662">
+				<ele>111.4404</ele>
+			</trkpt>
+			<trkpt lat="45.1868" lon="0.08698">
+				<ele>108.09990000000001</ele>
+			</trkpt>
+			<trkpt lat="45.18678" lon="0.08709">
+				<ele>107.062</ele>
+			</trkpt>
+			<trkpt lat="45.1865" lon="0.08776">
+				<ele>101.17449999999999</ele>
+			</trkpt>
+			<trkpt lat="45.18622" lon="0.08819">
+				<ele>97.603030000000004</ele>
+			</trkpt>
+			<trkpt lat="45.18583" lon="0.08856">
+				<ele>94.706249999999997</ele>
+			</trkpt>
+			<trkpt lat="45.18529" lon="0.08897">
+				<ele>92.296260000000004</ele>
+			</trkpt>
+			<trkpt lat="45.18477" lon="0.08937">
+				<ele>88.888279999999995</ele>
+			</trkpt>
+			<trkpt lat="45.18415" lon="0.09015">
+				<ele>86.789500000000004</ele>
+			</trkpt>
+			<trkpt lat="45.18346" lon="0.09096">
+				<ele>81.941850000000002</ele>
+			</trkpt>
+			<trkpt lat="45.1829" lon="0.09222">
+				<ele>79.897869999999998</ele>
+			</trkpt>
+			<trkpt lat="45.18379" lon="0.09305">
+				<ele>91.154960000000003</ele>
+			</trkpt>
+			<trkpt lat="45.18441" lon="0.09358">
+				<ele>94.909059999999997</ele>
+			</trkpt>
+			<trkpt lat="45.18471" lon="0.09403">
+				<ele>94.177329999999998</ele>
+			</trkpt>
+			<trkpt lat="45.18497" lon="0.09432">
+				<ele>94.063569999999999</ele>
+			</trkpt>
+			<trkpt lat="45.18519" lon="0.09472">
+				<ele>92.463750000000005</ele>
+			</trkpt>
+			<trkpt lat="45.18542" lon="0.09542">
+				<ele>87.137020000000007</ele>
+			</trkpt>
+			<trkpt lat="45.18569" lon="0.09608">
+				<ele>82.222899999999996</ele>
+			</trkpt>
+			<trkpt lat="45.18604" lon="0.09699">
+				<ele>81.157160000000005</ele>
+			</trkpt>
+			<trkpt lat="45.1862" lon="0.09681">
+				<ele>82.418400000000005</ele>
+			</trkpt>
+			<trkpt lat="45.18698" lon="0.0962">
+				<ele>86.813730000000007</ele>
+			</trkpt>
+			<trkpt lat="45.18735" lon="0.09591">
+				<ele>86.300200000000004</ele>
+			</trkpt>
+			<trkpt lat="45.18827" lon="0.09509">
+				<ele>90.229669999999999</ele>
+			</trkpt>
+			<trkpt lat="45.18932" lon="0.09403">
+				<ele>96.831090000000003</ele>
+			</trkpt>
+			<trkpt lat="45.18892" lon="0.09341">
+				<ele>96.916489999999996</ele>
+			</trkpt>
+			<trkpt lat="45.18864" lon="0.09282">
+				<ele>97.496709999999993</ele>
+			</trkpt>
+			<trkpt lat="45.18814" lon="0.09162">
+				<ele>97.140659999999997</ele>
+			</trkpt>
+			<trkpt lat="45.1876" lon="0.09047">
+				<ele>98.103899999999996</ele>
+			</trkpt>
+			<trkpt lat="45.18739" lon="0.08939">
+				<ele>105.4776</ele>
+			</trkpt>
+			<trkpt lat="45.18718" lon="0.08847">
+				<ele>104.9143</ele>
+			</trkpt>
+			<trkpt lat="45.18697" lon="0.08691">
+				<ele>109.2667</ele>
+			</trkpt>
+			<trkpt lat="45.18711" lon="0.08665">
+				<ele>111.4607</ele>
+			</trkpt>
+			<trkpt lat="45.18766" lon="0.08573">
+				<ele>115.22620000000001</ele>
+			</trkpt>
+			<trkpt lat="45.18845" lon="0.08475">
+				<ele>113.1964</ele>
+			</trkpt>
+			<trkpt lat="45.18904" lon="0.08341">
+				<ele>112.3283</ele>
+			</trkpt>
+			<trkpt lat="45.18981" lon="0.08208">
+				<ele>117.72920000000001</ele>
+			</trkpt>
+			<trkpt lat="45.19026" lon="0.08108">
+				<ele>124.7786</ele>
+			</trkpt>
+			<trkpt lat="45.19044" lon="0.08055">
+				<ele>127.3918</ele>
+			</trkpt>
+			<trkpt lat="45.19049" lon="0.0781">
+				<ele>130.8417</ele>
+			</trkpt>
+			<trkpt lat="45.19061" lon="0.07768">
+				<ele>129.43119999999999</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>

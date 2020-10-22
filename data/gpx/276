@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:20:12+02:00</time>
+		<bounds minlat="44.83063" minlon="0.67305" maxlat="44.83245" maxlon="0.67965"/>
+	</metadata>
+	<trk>
+		<name>Boucle du patrimoine</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="44.83064" lon="0.67563"/>
+			<trkpt lat="44.83078" lon="0.67557"/>
+			<trkpt lat="44.83093" lon="0.67491"/>
+			<trkpt lat="44.83097" lon="0.67459"/>
+			<trkpt lat="44.83096" lon="0.67431"/>
+			<trkpt lat="44.83093" lon="0.6741"/>
+			<trkpt lat="44.83068" lon="0.67305"/>
+			<trkpt lat="44.8315" lon="0.67324"/>
+			<trkpt lat="44.83219" lon="0.67351"/>
+			<trkpt lat="44.83232" lon="0.67426"/>
+			<trkpt lat="44.83231" lon="0.67476"/>
+			<trkpt lat="44.83231" lon="0.67492"/>
+			<trkpt lat="44.83229" lon="0.67506"/>
+			<trkpt lat="44.83227" lon="0.67516"/>
+			<trkpt lat="44.83226" lon="0.67526"/>
+			<trkpt lat="44.83229" lon="0.67554"/>
+			<trkpt lat="44.83232" lon="0.67594"/>
+			<trkpt lat="44.83237" lon="0.67667"/>
+			<trkpt lat="44.83238" lon="0.67684"/>
+			<trkpt lat="44.83242" lon="0.67741"/>
+			<trkpt lat="44.83245" lon="0.67786"/>
+			<trkpt lat="44.83244" lon="0.67786"/>
+			<trkpt lat="44.83231" lon="0.67806"/>
+			<trkpt lat="44.83228" lon="0.67804"/>
+			<trkpt lat="44.83223" lon="0.67774"/>
+			<trkpt lat="44.83184" lon="0.67775"/>
+			<trkpt lat="44.83172" lon="0.67848"/>
+			<trkpt lat="44.83151" lon="0.6792"/>
+			<trkpt lat="44.8314" lon="0.67941"/>
+			<trkpt lat="44.8309" lon="0.67965"/>
+			<trkpt lat="44.83071" lon="0.67853"/>
+			<trkpt lat="44.83065" lon="0.67803"/>
+			<trkpt lat="44.83065" lon="0.67738"/>
+			<trkpt lat="44.83069" lon="0.6767"/>
+			<trkpt lat="44.83075" lon="0.67601"/>
+			<trkpt lat="44.83077" lon="0.67566"/>
+			<trkpt lat="44.83065" lon="0.67565"/>
+			<trkpt lat="44.83063" lon="0.67566"/>
+		</trkseg>
+	</trk>
+</gpx>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:19:33+02:00</time>
+		<bounds minlat="44.78621" minlon="1.15652" maxlat="44.79363" maxlon="1.17221"/>
+	</metadata>
+	<trk>
+		<name>Boucle le Carlat</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="44.78958" lon="1.17221">
+				<ele>70</ele>
+			</trkpt>
+			<trkpt lat="44.78967" lon="1.17177">
+				<ele>70</ele>
+			</trkpt>
+			<trkpt lat="44.78814" lon="1.1694">
+				<ele>79</ele>
+			</trkpt>
+			<trkpt lat="44.7877" lon="1.16871">
+				<ele>74</ele>
+			</trkpt>
+			<trkpt lat="44.7874" lon="1.16783">
+				<ele>72</ele>
+			</trkpt>
+			<trkpt lat="44.78733" lon="1.16733">
+				<ele>74</ele>
+			</trkpt>
+			<trkpt lat="44.7871" lon="1.16705">
+				<ele>79</ele>
+			</trkpt>
+			<trkpt lat="44.78723" lon="1.16642">
+				<ele>84</ele>
+			</trkpt>
+			<trkpt lat="44.78713" lon="1.16607">
+				<ele>92</ele>
+			</trkpt>
+			<trkpt lat="44.78745" lon="1.16578">
+				<ele>92</ele>
+			</trkpt>
+			<trkpt lat="44.78824" lon="1.16412">
+				<ele>112</ele>
+			</trkpt>
+			<trkpt lat="44.78852" lon="1.16292">
+				<ele>125</ele>
+			</trkpt>
+			<trkpt lat="44.78832" lon="1.16298">
+				<ele>131</ele>
+			</trkpt>
+			<trkpt lat="44.7882" lon="1.16232">
+				<ele>137</ele>
+			</trkpt>
+			<trkpt lat="44.78767" lon="1.16104">
+				<ele>147</ele>
+			</trkpt>
+			<trkpt lat="44.78727" lon="1.16007">
+				<ele>153</ele>
+			</trkpt>
+			<trkpt lat="44.78655" lon="1.15772">
+				<ele>159</ele>
+			</trkpt>
+			<trkpt lat="44.78621" lon="1.15706">
+				<ele>168</ele>
+			</trkpt>
+			<trkpt lat="44.78643" lon="1.15652">
+				<ele>174</ele>
+			</trkpt>
+			<trkpt lat="44.78701" lon="1.1566">
+				<ele>182</ele>
+			</trkpt>
+			<trkpt lat="44.78765" lon="1.15716">
+				<ele>181</ele>
+			</trkpt>
+			<trkpt lat="44.7881" lon="1.15721">
+				<ele>188</ele>
+			</trkpt>
+			<trkpt lat="44.7885" lon="1.15717">
+				<ele>196</ele>
+			</trkpt>
+			<trkpt lat="44.7888" lon="1.15751">
+				<ele>196</ele>
+			</trkpt>
+			<trkpt lat="44.7893" lon="1.15804">
+				<ele>189</ele>
+			</trkpt>
+			<trkpt lat="44.78984" lon="1.15803">
+				<ele>193</ele>
+			</trkpt>
+			<trkpt lat="44.79032" lon="1.15893">
+				<ele>157</ele>
+			</trkpt>
+			<trkpt lat="44.7908" lon="1.1599">
+				<ele>128</ele>
+			</trkpt>
+			<trkpt lat="44.79119" lon="1.16027">
+				<ele>124</ele>
+			</trkpt>
+			<trkpt lat="44.79349" lon="1.16145">
+				<ele>88</ele>
+			</trkpt>
+			<trkpt lat="44.79363" lon="1.16173">
+				<ele>74</ele>
+			</trkpt>
+			<trkpt lat="44.79316" lon="1.16181">
+				<ele>75</ele>
+			</trkpt>
+			<trkpt lat="44.79244" lon="1.16182">
+				<ele>78</ele>
+			</trkpt>
+			<trkpt lat="44.79163" lon="1.162">
+				<ele>78</ele>
+			</trkpt>
+			<trkpt lat="44.79074" lon="1.16233">
+				<ele>77</ele>
+			</trkpt>
+			<trkpt lat="44.79036" lon="1.16269">
+				<ele>77</ele>
+			</trkpt>
+			<trkpt lat="44.7902" lon="1.16298">
+				<ele>78</ele>
+			</trkpt>
+			<trkpt lat="44.78967" lon="1.16343">
+				<ele>83</ele>
+			</trkpt>
+			<trkpt lat="44.78885" lon="1.16424">
+				<ele>90</ele>
+			</trkpt>
+			<trkpt lat="44.78767" lon="1.16574">
+				<ele>88</ele>
+			</trkpt>
+			<trkpt lat="44.78713" lon="1.16607">
+				<ele>92</ele>
+			</trkpt>
+			<trkpt lat="44.78723" lon="1.16642">
+				<ele>84</ele>
+			</trkpt>
+			<trkpt lat="44.7871" lon="1.16705">
+				<ele>79</ele>
+			</trkpt>
+			<trkpt lat="44.78733" lon="1.16733">
+				<ele>74</ele>
+			</trkpt>
+			<trkpt lat="44.7874" lon="1.16783">
+				<ele>72</ele>
+			</trkpt>
+			<trkpt lat="44.7877" lon="1.16871">
+				<ele>74</ele>
+			</trkpt>
+			<trkpt lat="44.78814" lon="1.1694">
+				<ele>79</ele>
+			</trkpt>
+			<trkpt lat="44.78967" lon="1.17177">
+				<ele>70</ele>
+			</trkpt>
+			<trkpt lat="44.78958" lon="1.17221">
+				<ele>70</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>
