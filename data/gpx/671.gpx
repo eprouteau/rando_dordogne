@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:49:00+02:00</time>
+		<bounds minlat="44.66584" minlon="0.39518" maxlat="44.66859" maxlon="0.39801"/>
+	</metadata>
+	<trk>
+		<name>Découverte de la Bastide d'Eymet</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="44.66695" lon="0.39618"/>
+			<trkpt lat="44.66709" lon="0.39631"/>
+			<trkpt lat="44.66757" lon="0.39645"/>
+			<trkpt lat="44.66762" lon="0.39651"/>
+			<trkpt lat="44.66768" lon="0.39659"/>
+			<trkpt lat="44.66793" lon="0.39672"/>
+			<trkpt lat="44.66824" lon="0.39669"/>
+			<trkpt lat="44.66826" lon="0.39663"/>
+			<trkpt lat="44.66842" lon="0.39662"/>
+			<trkpt lat="44.66847" lon="0.3966"/>
+			<trkpt lat="44.66842" lon="0.39676"/>
+			<trkpt lat="44.66854" lon="0.39707"/>
+			<trkpt lat="44.66855" lon="0.39715"/>
+			<trkpt lat="44.66859" lon="0.39717"/>
+			<trkpt lat="44.66845" lon="0.39755"/>
+			<trkpt lat="44.66845" lon="0.39801"/>
+			<trkpt lat="44.66819" lon="0.39801"/>
+			<trkpt lat="44.66754" lon="0.39798"/>
+			<trkpt lat="44.66749" lon="0.39799"/>
+			<trkpt lat="44.66717" lon="0.39794"/>
+			<trkpt lat="44.66713" lon="0.39777"/>
+			<trkpt lat="44.66711" lon="0.39771"/>
+			<trkpt lat="44.66711" lon="0.39791"/>
+			<trkpt lat="44.66669" lon="0.39786"/>
+			<trkpt lat="44.66672" lon="0.39739"/>
+			<trkpt lat="44.66659" lon="0.39738"/>
+			<trkpt lat="44.66651" lon="0.39738"/>
+			<trkpt lat="44.66649" lon="0.39758"/>
+			<trkpt lat="44.66649" lon="0.39771"/>
+			<trkpt lat="44.66648" lon="0.39782"/>
+			<trkpt lat="44.66584" lon="0.39767"/>
+			<trkpt lat="44.66587" lon="0.39726"/>
+			<trkpt lat="44.66597" lon="0.39629"/>
+			<trkpt lat="44.66603" lon="0.39568"/>
+			<trkpt lat="44.66603" lon="0.39532"/>
+			<trkpt lat="44.66607" lon="0.39518"/>
+			<trkpt lat="44.6663" lon="0.39534"/>
+			<trkpt lat="44.66659" lon="0.39534"/>
+			<trkpt lat="44.66657" lon="0.39597"/>
+			<trkpt lat="44.66678" lon="0.39599"/>
+			<trkpt lat="44.66679" lon="0.39605"/>
+			<trkpt lat="44.66692" lon="0.39613"/>
+		</trkseg>
+	</trk>
+</gpx>

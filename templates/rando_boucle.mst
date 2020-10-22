@@ -46,7 +46,7 @@
 	</div>
 	<div class="contenu">
 		<div class="col-xs-6 text-center">
-			<img src="apps/rando_dordogne/img/logo/download.png" alt="GPX" height="30"> Trâce GPX
+			<a href="http://emeric-prouteau.alwaysdata.net/gis/apps/rando_dordogne/data/gpx/{{idrando}}.gpx"><img src="apps/rando_dordogne/img/logo/download.png" alt="GPX" height="30"> Trâce GPX</a>
 		</div>
 		<div class="col-xs-6 text-center">
 			<img src="apps/rando_dordogne/img/logo/map.png" alt="fiche rando" height="30"> Fiche rando

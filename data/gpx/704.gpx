@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:49:29+02:00</time>
+		<bounds minlat="45.64077" minlon="0.72604" maxlat="45.64403" maxlon="0.72887"/>
+	</metadata>
+	<trk>
+		<name>Sentier bonus</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="45.64077" lon="0.72623"/>
+			<trkpt lat="45.64085" lon="0.72632"/>
+			<trkpt lat="45.6409" lon="0.72651"/>
+			<trkpt lat="45.64094" lon="0.72673"/>
+			<trkpt lat="45.64098" lon="0.7269"/>
+			<trkpt lat="45.64124" lon="0.72726"/>
+			<trkpt lat="45.64131" lon="0.72742"/>
+			<trkpt lat="45.64137" lon="0.72754"/>
+			<trkpt lat="45.64143" lon="0.72765"/>
+			<trkpt lat="45.64161" lon="0.72782"/>
+			<trkpt lat="45.64169" lon="0.72795"/>
+			<trkpt lat="45.6418" lon="0.72806"/>
+			<trkpt lat="45.64191" lon="0.72815"/>
+			<trkpt lat="45.64201" lon="0.72823"/>
+			<trkpt lat="45.64223" lon="0.72862"/>
+			<trkpt lat="45.64234" lon="0.72857"/>
+			<trkpt lat="45.64253" lon="0.72853"/>
+			<trkpt lat="45.64268" lon="0.7286"/>
+			<trkpt lat="45.64317" lon="0.72887"/>
+			<trkpt lat="45.64334" lon="0.72877"/>
+			<trkpt lat="45.64349" lon="0.72876"/>
+			<trkpt lat="45.64373" lon="0.72875"/>
+			<trkpt lat="45.64386" lon="0.7286"/>
+			<trkpt lat="45.64386" lon="0.72834"/>
+			<trkpt lat="45.64403" lon="0.72812"/>
+			<trkpt lat="45.64403" lon="0.72802"/>
+			<trkpt lat="45.64401" lon="0.72763"/>
+			<trkpt lat="45.64371" lon="0.72731"/>
+			<trkpt lat="45.64362" lon="0.72703"/>
+			<trkpt lat="45.64371" lon="0.72688"/>
+			<trkpt lat="45.64377" lon="0.72656"/>
+			<trkpt lat="45.64373" lon="0.72645"/>
+			<trkpt lat="45.64352" lon="0.72632"/>
+			<trkpt lat="45.64319" lon="0.72623"/>
+			<trkpt lat="45.64333" lon="0.72627"/>
+			<trkpt lat="45.64319" lon="0.72623"/>
+			<trkpt lat="45.64264" lon="0.72604"/>
+			<trkpt lat="45.64246" lon="0.72639"/>
+			<trkpt lat="45.64219" lon="0.72709"/>
+			<trkpt lat="45.64228" lon="0.72686"/>
+			<trkpt lat="45.64219" lon="0.72709"/>
+			<trkpt lat="45.6421" lon="0.72722"/>
+			<trkpt lat="45.64167" lon="0.72754"/>
+			<trkpt lat="45.64163" lon="0.72763"/>
+			<trkpt lat="45.64161" lon="0.72782"/>
+			<trkpt lat="45.64143" lon="0.72765"/>
+			<trkpt lat="45.64137" lon="0.72754"/>
+			<trkpt lat="45.64131" lon="0.72742"/>
+			<trkpt lat="45.64124" lon="0.72726"/>
+			<trkpt lat="45.64098" lon="0.7269"/>
+			<trkpt lat="45.64094" lon="0.72673"/>
+			<trkpt lat="45.6409" lon="0.72651"/>
+			<trkpt lat="45.64085" lon="0.72632"/>
+			<trkpt lat="45.64077" lon="0.72623"/>
+		</trkseg>
+	</trk>
+</gpx>

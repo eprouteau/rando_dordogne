@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:48:21+02:00</time>
+		<bounds minlat="44.72893" minlon="0.60512" maxlat="44.73075" maxlon="0.60834"/>
+	</metadata>
+	<trk>
+		<name>Découverte de la cité médiévale d'Issigeac</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="44.73075" lon="0.60668"/>
+			<trkpt lat="44.73054" lon="0.60656"/>
+			<trkpt lat="44.73053" lon="0.60634"/>
+			<trkpt lat="44.73048" lon="0.60618"/>
+			<trkpt lat="44.73004" lon="0.60576"/>
+			<trkpt lat="44.72972" lon="0.606"/>
+			<trkpt lat="44.72966" lon="0.60581"/>
+			<trkpt lat="44.72982" lon="0.6057"/>
+			<trkpt lat="44.7297" lon="0.60544"/>
+			<trkpt lat="44.72946" lon="0.60561"/>
+			<trkpt lat="44.72937" lon="0.60569"/>
+			<trkpt lat="44.72927" lon="0.60539"/>
+			<trkpt lat="44.72959" lon="0.60515"/>
+			<trkpt lat="44.72957" lon="0.60512"/>
+			<trkpt lat="44.72903" lon="0.60554"/>
+			<trkpt lat="44.72893" lon="0.6057"/>
+			<trkpt lat="44.72915" lon="0.606"/>
+			<trkpt lat="44.72921" lon="0.6062"/>
+			<trkpt lat="44.72914" lon="0.60631"/>
+			<trkpt lat="44.72905" lon="0.60618"/>
+			<trkpt lat="44.72902" lon="0.60617"/>
+			<trkpt lat="44.72896" lon="0.60624"/>
+			<trkpt lat="44.72898" lon="0.60649"/>
+			<trkpt lat="44.729" lon="0.60668"/>
+			<trkpt lat="44.72902" lon="0.60673"/>
+			<trkpt lat="44.72908" lon="0.60704"/>
+			<trkpt lat="44.72922" lon="0.60699"/>
+			<trkpt lat="44.72929" lon="0.6075"/>
+			<trkpt lat="44.72934" lon="0.60779"/>
+			<trkpt lat="44.72941" lon="0.60796"/>
+			<trkpt lat="44.72954" lon="0.60811"/>
+			<trkpt lat="44.72964" lon="0.60825"/>
+			<trkpt lat="44.72973" lon="0.60832"/>
+			<trkpt lat="44.72978" lon="0.60834"/>
+			<trkpt lat="44.72998" lon="0.60833"/>
+			<trkpt lat="44.73005" lon="0.60825"/>
+			<trkpt lat="44.73006" lon="0.60824"/>
+			<trkpt lat="44.73007" lon="0.60775"/>
+			<trkpt lat="44.7299" lon="0.6077"/>
+			<trkpt lat="44.72997" lon="0.60743"/>
+			<trkpt lat="44.72999" lon="0.60732"/>
+			<trkpt lat="44.73005" lon="0.60728"/>
+			<trkpt lat="44.73007" lon="0.60692"/>
+			<trkpt lat="44.72971" lon="0.607"/>
+			<trkpt lat="44.72969" lon="0.60662"/>
+			<trkpt lat="44.7301" lon="0.60676"/>
+			<trkpt lat="44.7302" lon="0.60674"/>
+			<trkpt lat="44.73039" lon="0.60663"/>
+			<trkpt lat="44.7305" lon="0.60658"/>
+		</trkseg>
+	</trk>
+</gpx>

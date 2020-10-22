@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:52:13+02:00</time>
+		<bounds minlat="45.15532840001908" minlon="0.2850849" maxlat="45.159069800019068" maxlon="0.2901066"/>
+	</metadata>
+	<trk>
+		<name>Boucle du Châtaigner</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="45.15532840001908" lon="0.2850849"/>
+			<trkpt lat="45.155354600019088" lon="0.2853736"/>
+		</trkseg>
+		<trkseg>
+			<trkpt lat="45.155354600019088" lon="0.2853736"/>
+			<trkpt lat="45.155388800019082" lon="0.2855744"/>
+			<trkpt lat="45.155407" lon="0.2860964"/>
+			<trkpt lat="45.155419" lon="0.2863428"/>
+			<trkpt lat="45.155415400019066" lon="0.2870931"/>
+			<trkpt lat="45.155415400019066" lon="0.2872466"/>
+			<trkpt lat="45.155414500019077" lon="0.2872921"/>
+		</trkseg>
+		<trkseg>
+			<trkpt lat="45.155414500019077" lon="0.2872921"/>
+			<trkpt lat="45.155634500019062" lon="0.2873008"/>
+			<trkpt lat="45.155858" lon="0.2873287"/>
+			<trkpt lat="45.156200700019077" lon="0.2872609"/>
+			<trkpt lat="45.156836" lon="0.2870824"/>
+			<trkpt lat="45.157161800019068" lon="0.2869456"/>
+			<trkpt lat="45.157193" lon="0.2869325"/>
+			<trkpt lat="45.157415300019075" lon="0.2867747"/>
+		</trkseg>
+		<trkseg>
+			<trkpt lat="45.157415300019075" lon="0.2867747"/>
+			<trkpt lat="45.157527900019076" lon="0.2870151"/>
+			<trkpt lat="45.157607300019073" lon="0.2871385"/>
+			<trkpt lat="45.15755620001908" lon="0.2871922"/>
+			<trkpt lat="45.157473" lon="0.287329"/>
+			<trkpt lat="45.157291400019069" lon="0.2874523"/>
+			<trkpt lat="45.157165300019081" lon="0.2875451"/>
+			<trkpt lat="45.157024700019093" lon="0.2876562"/>
+			<trkpt lat="45.157045400019072" lon="0.2878659"/>
+			<trkpt lat="45.157140600019076" lon="0.2882345"/>
+			<trkpt lat="45.157157100019056" lon="0.2884689"/>
+			<trkpt lat="45.157123700019078" lon="0.2886824"/>
+			<trkpt lat="45.157025300019079" lon="0.2892403"/>
+			<trkpt lat="45.157029" lon="0.2896667"/>
+			<trkpt lat="45.157191700019077" lon="0.2899162"/>
+			<trkpt lat="45.157486800019065" lon="0.2901066"/>
+			<trkpt lat="45.157860700019079" lon="0.289295"/>
+			<trkpt lat="45.158254100019072" lon="0.2885145"/>
+			<trkpt lat="45.159035100019054" lon="0.2869218"/>
+			<trkpt lat="45.159069800019068" lon="0.286853"/>
+		</trkseg>
+		<trkseg>
+			<trkpt lat="45.159069800019068" lon="0.286853"/>
+			<trkpt lat="45.158997600019063" lon="0.2866549"/>
+			<trkpt lat="45.158979600019073" lon="0.2865517"/>
+			<trkpt lat="45.158983700019078" lon="0.2864364"/>
+		</trkseg>
+		<trkseg>
+			<trkpt lat="45.158983700019078" lon="0.2864364"/>
+			<trkpt lat="45.158733200019071" lon="0.2864131"/>
+			<trkpt lat="45.157904500019079" lon="0.2866084"/>
+			<trkpt lat="45.157838200019079" lon="0.2865823"/>
+			<trkpt lat="45.157797100019089" lon="0.2865115"/>
+		</trkseg>
+		<trkseg>
+			<trkpt lat="45.157797100019089" lon="0.2865115"/>
+			<trkpt lat="45.157701900019063" lon="0.2865967"/>
+			<trkpt lat="45.15762990001906" lon="0.2866697"/>
+			<trkpt lat="45.157486200019072" lon="0.2866986"/>
+		</trkseg>
+		<trkseg>
+			<trkpt lat="45.157415300019075" lon="0.2867747"/>
+			<trkpt lat="45.157486200019072" lon="0.2866986"/>
+		</trkseg>
+	</trk>
+</gpx>

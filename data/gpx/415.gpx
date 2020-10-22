@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:44:52+02:00</time>
+		<bounds minlat="45.13851" minlon="0.90316" maxlat="45.14526" maxlon="0.90953"/>
+	</metadata>
+	<trk>
+		<name>Boucle de Leygalie</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="45.14467" lon="0.90383">
+				<ele>233.3843</ele>
+			</trkpt>
+			<trkpt lat="45.14472" lon="0.9039">
+				<ele>233.16460000000001</ele>
+			</trkpt>
+			<trkpt lat="45.14479" lon="0.904">
+				<ele>232.63329999999999</ele>
+			</trkpt>
+			<trkpt lat="45.14499" lon="0.90447">
+				<ele>229.8914</ele>
+			</trkpt>
+			<trkpt lat="45.14525" lon="0.90526">
+				<ele>228.22300000000001</ele>
+			</trkpt>
+			<trkpt lat="45.14526" lon="0.90571">
+				<ele>229.6464</ele>
+			</trkpt>
+			<trkpt lat="45.14516" lon="0.90597">
+				<ele>230.40969999999999</ele>
+			</trkpt>
+			<trkpt lat="45.14496" lon="0.90634">
+				<ele>231.24039999999999</ele>
+			</trkpt>
+			<trkpt lat="45.14473" lon="0.90664">
+				<ele>231.172</ele>
+			</trkpt>
+			<trkpt lat="45.14455" lon="0.90689">
+				<ele>231.13</ele>
+			</trkpt>
+			<trkpt lat="45.14436" lon="0.9086">
+				<ele>228.90010000000001</ele>
+			</trkpt>
+			<trkpt lat="45.14426" lon="0.90877">
+				<ele>229.5455</ele>
+			</trkpt>
+			<trkpt lat="45.14398" lon="0.90896">
+				<ele>230.3707</ele>
+			</trkpt>
+			<trkpt lat="45.14309" lon="0.90949">
+				<ele>231.6711</ele>
+			</trkpt>
+			<trkpt lat="45.14302" lon="0.90953">
+				<ele>231.61500000000001</ele>
+			</trkpt>
+			<trkpt lat="45.14282" lon="0.90923">
+				<ele>229.9041</ele>
+			</trkpt>
+			<trkpt lat="45.14222" lon="0.90887">
+				<ele>220.5727</ele>
+			</trkpt>
+			<trkpt lat="45.14169" lon="0.90817">
+				<ele>209.70650000000001</ele>
+			</trkpt>
+			<trkpt lat="45.14106" lon="0.90779">
+				<ele>205.49430000000001</ele>
+			</trkpt>
+			<trkpt lat="45.14046" lon="0.90742">
+				<ele>212.42679999999999</ele>
+			</trkpt>
+			<trkpt lat="45.13997" lon="0.90715">
+				<ele>216.46190000000001</ele>
+			</trkpt>
+			<trkpt lat="45.13975" lon="0.90699">
+				<ele>218.21700000000001</ele>
+			</trkpt>
+			<trkpt lat="45.13937" lon="0.90631">
+				<ele>223.84</ele>
+			</trkpt>
+			<trkpt lat="45.13895" lon="0.90565">
+				<ele>226.62459999999999</ele>
+			</trkpt>
+			<trkpt lat="45.13888" lon="0.90551">
+				<ele>227.1028</ele>
+			</trkpt>
+			<trkpt lat="45.13879" lon="0.90539">
+				<ele>227.76519999999999</ele>
+			</trkpt>
+			<trkpt lat="45.13854" lon="0.90491">
+				<ele>230.1609</ele>
+			</trkpt>
+			<trkpt lat="45.13851" lon="0.90481">
+				<ele>230.60810000000001</ele>
+			</trkpt>
+			<trkpt lat="45.13886" lon="0.90459">
+				<ele>231</ele>
+			</trkpt>
+			<trkpt lat="45.13988" lon="0.90393">
+				<ele>233.1293</ele>
+			</trkpt>
+			<trkpt lat="45.1405" lon="0.90352">
+				<ele>234.50360000000001</ele>
+			</trkpt>
+			<trkpt lat="45.14113" lon="0.90326">
+				<ele>234.9649</ele>
+			</trkpt>
+			<trkpt lat="45.14141" lon="0.90322">
+				<ele>234.3468</ele>
+			</trkpt>
+			<trkpt lat="45.1416" lon="0.90328">
+				<ele>233.50399999999999</ele>
+			</trkpt>
+			<trkpt lat="45.14225" lon="0.90316">
+				<ele>232.56780000000001</ele>
+			</trkpt>
+			<trkpt lat="45.14254" lon="0.90334">
+				<ele>232.24889999999999</ele>
+			</trkpt>
+			<trkpt lat="45.14293" lon="0.90357">
+				<ele>233.6935</ele>
+			</trkpt>
+			<trkpt lat="45.14404" lon="0.90394">
+				<ele>234.02019999999999</ele>
+			</trkpt>
+			<trkpt lat="45.14461" lon="0.90382">
+				<ele>233.53489999999999</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>

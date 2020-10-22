@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:47:36+02:00</time>
+		<bounds minlat="44.75644" minlon="1.07633" maxlat="44.76886" maxlon="1.08514"/>
+	</metadata>
+	<trk>
+		<name>Boucle du Breuil</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="44.76829" lon="1.07657">
+				<ele>173</ele>
+			</trkpt>
+			<trkpt lat="44.76836" lon="1.07729">
+				<ele>179</ele>
+			</trkpt>
+			<trkpt lat="44.76886" lon="1.07815">
+				<ele>186</ele>
+			</trkpt>
+			<trkpt lat="44.76834" lon="1.07881">
+				<ele>192</ele>
+			</trkpt>
+			<trkpt lat="44.76801" lon="1.07995">
+				<ele>195</ele>
+			</trkpt>
+			<trkpt lat="44.76873" lon="1.08203">
+				<ele>204</ele>
+			</trkpt>
+			<trkpt lat="44.76868" lon="1.08312">
+				<ele>205</ele>
+			</trkpt>
+			<trkpt lat="44.76728" lon="1.08258">
+				<ele>192</ele>
+			</trkpt>
+			<trkpt lat="44.76646" lon="1.08252">
+				<ele>192</ele>
+			</trkpt>
+			<trkpt lat="44.76559" lon="1.08282">
+				<ele>186</ele>
+			</trkpt>
+			<trkpt lat="44.76471" lon="1.08329">
+				<ele>176</ele>
+			</trkpt>
+			<trkpt lat="44.76326" lon="1.08463">
+				<ele>156</ele>
+			</trkpt>
+			<trkpt lat="44.76262" lon="1.08395">
+				<ele>156</ele>
+			</trkpt>
+			<trkpt lat="44.76233" lon="1.0828">
+				<ele>159</ele>
+			</trkpt>
+			<trkpt lat="44.76179" lon="1.08245">
+				<ele>164</ele>
+			</trkpt>
+			<trkpt lat="44.76131" lon="1.08316">
+				<ele>167</ele>
+			</trkpt>
+			<trkpt lat="44.76041" lon="1.08362">
+				<ele>178</ele>
+			</trkpt>
+			<trkpt lat="44.76006" lon="1.08457">
+				<ele>187</ele>
+			</trkpt>
+			<trkpt lat="44.75943" lon="1.08446">
+				<ele>193</ele>
+			</trkpt>
+			<trkpt lat="44.75867" lon="1.08448">
+				<ele>200</ele>
+			</trkpt>
+			<trkpt lat="44.75755" lon="1.08514">
+				<ele>215</ele>
+			</trkpt>
+			<trkpt lat="44.75723" lon="1.08358">
+				<ele>215</ele>
+			</trkpt>
+			<trkpt lat="44.75644" lon="1.08148">
+				<ele>225</ele>
+			</trkpt>
+			<trkpt lat="44.75708" lon="1.08054">
+				<ele>222</ele>
+			</trkpt>
+			<trkpt lat="44.75753" lon="1.08008">
+				<ele>221</ele>
+			</trkpt>
+			<trkpt lat="44.75871" lon="1.07899">
+				<ele>214</ele>
+			</trkpt>
+			<trkpt lat="44.75993" lon="1.07741">
+				<ele>206</ele>
+			</trkpt>
+			<trkpt lat="44.76024" lon="1.07706">
+				<ele>203</ele>
+			</trkpt>
+			<trkpt lat="44.76089" lon="1.07701">
+				<ele>196</ele>
+			</trkpt>
+			<trkpt lat="44.76143" lon="1.077">
+				<ele>191</ele>
+			</trkpt>
+			<trkpt lat="44.76206" lon="1.07743">
+				<ele>183</ele>
+			</trkpt>
+			<trkpt lat="44.76276" lon="1.07763">
+				<ele>174</ele>
+			</trkpt>
+			<trkpt lat="44.76363" lon="1.07704">
+				<ele>168</ele>
+			</trkpt>
+			<trkpt lat="44.76453" lon="1.07655">
+				<ele>157</ele>
+			</trkpt>
+			<trkpt lat="44.76507" lon="1.07679">
+				<ele>151</ele>
+			</trkpt>
+			<trkpt lat="44.76512" lon="1.07686">
+				<ele>151</ele>
+			</trkpt>
+			<trkpt lat="44.76593" lon="1.07677">
+				<ele>149</ele>
+			</trkpt>
+			<trkpt lat="44.76646" lon="1.07633">
+				<ele>150</ele>
+			</trkpt>
+			<trkpt lat="44.76712" lon="1.07692">
+				<ele>158</ele>
+			</trkpt>
+			<trkpt lat="44.76723" lon="1.07742">
+				<ele>164</ele>
+			</trkpt>
+			<trkpt lat="44.76735" lon="1.07745">
+				<ele>167</ele>
+			</trkpt>
+			<trkpt lat="44.76806" lon="1.07748">
+				<ele>180</ele>
+			</trkpt>
+			<trkpt lat="44.76797" lon="1.07691">
+				<ele>173</ele>
+			</trkpt>
+			<trkpt lat="44.76828" lon="1.07658">
+				<ele>173</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>

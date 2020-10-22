@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:50:23+02:00</time>
+		<bounds minlat="44.8785" minlon="0.94525" maxlat="44.87982" maxlon="0.9501"/>
+	</metadata>
+	<trk>
+		<name>Boucle du Bourg</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="44.87938" lon="0.94525">
+				<ele>214.61718999999999</ele>
+			</trkpt>
+			<trkpt lat="44.87958" lon="0.9456">
+				<ele>217.13672</ele>
+			</trkpt>
+			<trkpt lat="44.87971" lon="0.94592">
+				<ele>219.375</ele>
+			</trkpt>
+			<trkpt lat="44.87977" lon="0.9462">
+				<ele>220.85937999999999</ele>
+			</trkpt>
+			<trkpt lat="44.87977" lon="0.94654">
+				<ele>222.21093999999999</ele>
+			</trkpt>
+			<trkpt lat="44.87975" lon="0.94669">
+				<ele>222.48047</ele>
+			</trkpt>
+			<trkpt lat="44.87971" lon="0.94691">
+				<ele>222.06640999999999</ele>
+			</trkpt>
+			<trkpt lat="44.87977" lon="0.94708">
+				<ele>221.99218999999999</ele>
+			</trkpt>
+			<trkpt lat="44.87975" lon="0.94736">
+				<ele>221.40234000000001</ele>
+			</trkpt>
+			<trkpt lat="44.87979" lon="0.94751">
+				<ele>220.99609000000001</ele>
+			</trkpt>
+			<trkpt lat="44.87982" lon="0.94764">
+				<ele>220.58593999999999</ele>
+			</trkpt>
+			<trkpt lat="44.87974" lon="0.94787">
+				<ele>220.19140999999999</ele>
+			</trkpt>
+			<trkpt lat="44.87941" lon="0.9489">
+				<ele>220.48437999999999</ele>
+			</trkpt>
+			<trkpt lat="44.87924" lon="0.94961">
+				<ele>218.75390999999999</ele>
+			</trkpt>
+			<trkpt lat="44.87913" lon="0.94987">
+				<ele>216.79297</ele>
+			</trkpt>
+			<trkpt lat="44.87911" lon="0.9501">
+				<ele>214.98437999999999</ele>
+			</trkpt>
+			<trkpt lat="44.8789" lon="0.94994">
+				<ele>214.39062999999999</ele>
+			</trkpt>
+			<trkpt lat="44.8786" lon="0.94939">
+				<ele>214.90625</ele>
+			</trkpt>
+			<trkpt lat="44.87855" lon="0.94868">
+				<ele>215.35547</ele>
+			</trkpt>
+			<trkpt lat="44.8785" lon="0.94761">
+				<ele>212.76953</ele>
+			</trkpt>
+			<trkpt lat="44.87858" lon="0.94675">
+				<ele>212.14062999999999</ele>
+			</trkpt>
+			<trkpt lat="44.87888" lon="0.94621">
+				<ele>213.9375</ele>
+			</trkpt>
+			<trkpt lat="44.87938" lon="0.94525">
+				<ele>214.61718999999999</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>

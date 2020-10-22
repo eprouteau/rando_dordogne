@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="FME(R) 2020.1.0.1">
+	<metadata>
+		<time>2020-10-22T16:40:42+02:00</time>
+		<bounds minlat="44.97419" minlon="1.32254" maxlat="44.97893" maxlon="1.3275"/>
+	</metadata>
+	<trk>
+		<name>Promenade au coeur du Bourg</name>
+		<extensions>
+			<gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+				<gpxx:DisplayColor>Red</gpxx:DisplayColor>
+			</gpxx:TrackExtension>
+		</extensions>
+		<trkseg>
+			<trkpt lat="44.97419" lon="1.32254"/>
+			<trkpt lat="44.97425" lon="1.32254"/>
+			<trkpt lat="44.97434" lon="1.32259"/>
+			<trkpt lat="44.97451" lon="1.32263"/>
+			<trkpt lat="44.97466" lon="1.32267"/>
+			<trkpt lat="44.97483" lon="1.32278"/>
+			<trkpt lat="44.97489" lon="1.32291"/>
+			<trkpt lat="44.97537" lon="1.32289"/>
+			<trkpt lat="44.97552" lon="1.32282"/>
+			<trkpt lat="44.97573" lon="1.32276"/>
+			<trkpt lat="44.97582" lon="1.32276"/>
+			<trkpt lat="44.97592" lon="1.32295"/>
+			<trkpt lat="44.97612" lon="1.32336"/>
+			<trkpt lat="44.97627" lon="1.32362"/>
+			<trkpt lat="44.97631" lon="1.32368"/>
+			<trkpt lat="44.97644" lon="1.32417"/>
+			<trkpt lat="44.97648" lon="1.32426"/>
+			<trkpt lat="44.97678" lon="1.32452"/>
+			<trkpt lat="44.9768" lon="1.32458"/>
+			<trkpt lat="44.97691" lon="1.32456"/>
+			<trkpt lat="44.977" lon="1.32465"/>
+			<trkpt lat="44.97717" lon="1.32493"/>
+			<trkpt lat="44.97728" lon="1.32525"/>
+			<trkpt lat="44.97734" lon="1.32535"/>
+			<trkpt lat="44.97738" lon="1.32538"/>
+			<trkpt lat="44.97743" lon="1.32546"/>
+			<trkpt lat="44.97751" lon="1.32553"/>
+			<trkpt lat="44.9776" lon="1.32563"/>
+			<trkpt lat="44.97768" lon="1.32572"/>
+			<trkpt lat="44.97794" lon="1.32591"/>
+			<trkpt lat="44.97804" lon="1.326"/>
+			<trkpt lat="44.97818" lon="1.32613"/>
+			<trkpt lat="44.97856" lon="1.32651"/>
+			<trkpt lat="44.97863" lon="1.32656"/>
+			<trkpt lat="44.97871" lon="1.32653"/>
+			<trkpt lat="44.9788" lon="1.32656"/>
+			<trkpt lat="44.97886" lon="1.32666"/>
+			<trkpt lat="44.97891" lon="1.32677"/>
+			<trkpt lat="44.97893" lon="1.32694"/>
+			<trkpt lat="44.97886" lon="1.32709"/>
+			<trkpt lat="44.9788" lon="1.32701"/>
+			<trkpt lat="44.97833" lon="1.32677"/>
+			<trkpt lat="44.97807" lon="1.32684"/>
+			<trkpt lat="44.97796" lon="1.32688"/>
+			<trkpt lat="44.9779" lon="1.32694"/>
+			<trkpt lat="44.97781" lon="1.32711"/>
+			<trkpt lat="44.97775" lon="1.32731"/>
+			<trkpt lat="44.97745" lon="1.32744"/>
+			<trkpt lat="44.97736" lon="1.3275"/>
+			<trkpt lat="44.97717" lon="1.32748"/>
+			<trkpt lat="44.97713" lon="1.32747"/>
+			<trkpt lat="44.97704" lon="1.32744"/>
+			<trkpt lat="44.97693" lon="1.32735"/>
+			<trkpt lat="44.97678" lon="1.32724"/>
+			<trkpt lat="44.97642" lon="1.32688"/>
+			<trkpt lat="44.9762" lon="1.32668"/>
+			<trkpt lat="44.97599" lon="1.32656"/>
+			<trkpt lat="44.97569" lon="1.32653"/>
+			<trkpt lat="44.97552" lon="1.32634"/>
+			<trkpt lat="44.97547" lon="1.32626"/>
+			<trkpt lat="44.97532" lon="1.32619"/>
+			<trkpt lat="44.97526" lon="1.32621"/>
+			<trkpt lat="44.97513" lon="1.32621"/>
+			<trkpt lat="44.97507" lon="1.32604"/>
+			<trkpt lat="44.975" lon="1.32593"/>
+			<trkpt lat="44.97494" lon="1.32587"/>
+			<trkpt lat="44.97489" lon="1.32583"/>
+			<trkpt lat="44.97477" lon="1.32565"/>
+			<trkpt lat="44.97472" lon="1.32563"/>
+			<trkpt lat="44.97453" lon="1.32576"/>
+			<trkpt lat="44.97449" lon="1.32576"/>
+			<trkpt lat="44.97438" lon="1.32568"/>
+			<trkpt lat="44.97429" lon="1.32553"/>
+			<trkpt lat="44.97427" lon="1.3254"/>
+			<trkpt lat="44.97427" lon="1.32514"/>
+			<trkpt lat="44.97434" lon="1.3249"/>
+			<trkpt lat="44.97434" lon="1.32484"/>
+			<trkpt lat="44.97434" lon="1.32467"/>
+			<trkpt lat="44.97447" lon="1.3243"/>
+			<trkpt lat="44.97444" lon="1.32424"/>
+			<trkpt lat="44.97447" lon="1.32413"/>
+			<trkpt lat="44.97449" lon="1.32407"/>
+			<trkpt lat="44.97455" lon="1.32349"/>
+			<trkpt lat="44.97455" lon="1.32332"/>
+			<trkpt lat="44.97455" lon="1.32314"/>
+			<trkpt lat="44.97455" lon="1.32291"/>
+			<trkpt lat="44.97451" lon="1.32263"/>
+			<trkpt lat="44.97434" lon="1.32259"/>
+			<trkpt lat="44.97425" lon="1.32254"/>
+			<trkpt lat="44.97419" lon="1.32254"/>
+		</trkseg>
+	</trk>
+</gpx>
