@@ -22,6 +22,9 @@
 		<div class="col-xs-3 text-center"><img src="apps/rando_dordogne/img/logo/ascent.png" alt="dénivelé positif" height="20"> {{den_neg}} m</div>
 	</div>
 	<div class="ligne">
+		<div class="col-xs-3 text-center"><img src="apps/rando_dordogne/img/logo/foret.png" alt="Type" height="20"> {{pourcentage_foret}} %</div>
+	</div>
+	<div class="ligne">
 		<div class="col-xs-12">
 			<h4 class="sub-title-feature"><i class="fas fa-car-alt"></i> Accès</h4>
 		</div>
