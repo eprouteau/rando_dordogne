@@ -12,16 +12,22 @@
       "filter": [{
           "attribut": "secteur",
           "type": "combobox",
-          "label": "Grand térritoire"
+          "label": "Secteur"
         },
         {
           "attribut": "classes_den_pos",
           "type": "button",
-          "label": "Service",
+          "label": "Dénivelé",
           "updateOnChange": true
         },
         {
           "attribut": "classes_km",
+          "type": "button",
+          "label": "Kilomètres",
+          "updateOnChange": true
+        },
+        {
+          "attribut": "classes_foret",
           "type": "button",
           "label": "Nature de baignade",
           "updateOnChange": true

@@ -36,25 +36,17 @@ var filter = (function() {
 
       nbLayers++;
       if (nbLayers == 1) {
-        _currentSelectedLayer=layerId;
-        // wait until at least one layer is load before create filter panel
-        mviewer.getLayer(layerId).layer.once('change', function(e) {
-          _manageFilterPanel();
-          if (mviewer.customComponents.filter.config.options.open) {
-            $("#advancedFilter").show();
-          }
-          $('#advancedFilter').easyDrag({
-            'handle': 'h2'
-          });
-          $('[data-toggle="filter-tooltip"]').tooltip({
-            placement : 'top'
-          });
-        });
+        _currentSelectedLayer = layerId;
       }
 
     });
 
     if (_layersFiltersParams.size > 0) {
+
+      // wait map ready
+      mviewer.getMap().once('rendercomplete', function(e) {
+        _initFilterPanel();
+      });
 
       //Add filter button to toolstoolbar
       var button = [
@@ -66,6 +58,47 @@ var filter = (function() {
       ].join("");
       $("#toolstoolbar").prepend(button);
     }
+
+  };
+
+  /**
+   * Public Method: _initFilterPanel
+   *
+   * Recour au setTimeout car aucun event ne se déclenche correctement à la fin du chargement des données
+   */
+  var _initFilterPanel = function() {
+    // Parse all layers to get params
+    for (var [layerId, params] of _layersFiltersParams) {
+
+      if (mviewer.getLayer(layerId) && mviewer.getLayer(layerId).layer) {
+        var source = mviewer.getLayer(layerId).layer.getSource();
+        var features = source instanceof ol.source.Cluster ? source.getSource().getFeatures() : source.getFeatures();
+
+        if (features.length) {
+          _manageFilterPanel();
+
+          // show panel if wanted
+          if (mviewer.customComponents.filter.config.options.open && window.innerWidth > 360) {
+            $("#advancedFilter").show();
+          }
+
+          // Add draggable on panel
+          $('#advancedFilter').easyDrag({
+            'handle': 'h2'
+          });
+
+          // Update tooltip on button
+          $('[data-toggle="filter-tooltip"]').tooltip({
+            placement: 'top'
+          });
+        } else {
+          setTimeout(_initFilterPanel, 300); // try again in 300 milliseconds
+        }
+      } else {
+        setTimeout(_initFilterPanel, 300); // try again in 300 milliseconds
+      }
+    }
+
   };
 
   /**
@@ -77,7 +110,8 @@ var filter = (function() {
 
     // show or hide filter panel
     if ($("#advancedFilter").is(':visible')) {
-      $('#filterbtn').removeClass('btn-default.focus');
+      $('#filterbtn').removeClass('btn.focus');
+      $('#filterbtn').removeClass('btn.active');
       $("#advancedFilter").hide();
     } else {
       $("#advancedFilter").show();
@@ -111,9 +145,9 @@ var filter = (function() {
         // add selectBox if needed
         var content = "";
         if (nbLayers > 1 && indexLayerId == 0) {
-          contentSelectLayer.push('<option selected="selected">' + layerId + '</option>');
+          contentSelectLayer.push('<option selected="selected" value="' + layerId + '">' + mviewer.getLayer(layerId).name + '</option>');
         } else if (nbLayers > 1) {
-          contentSelectLayer.push('<option >' + layerId + '</option>');
+          contentSelectLayer.push('<option value="' + layerId + '">' + mviewer.getLayer(layerId).name + '</option>');
         }
         $("#advancedFilter").append('<div id="' + destinationDivId + '" "></div>');
       }
@@ -137,7 +171,7 @@ var filter = (function() {
           _manageDateFilter(destinationDivId, layerId, params[index]);
         }
       }
-      if(layerId != _currentSelectedLayer){
+      if (layerId != _currentSelectedLayer) {
         $("#" + destinationDivId).hide();
       }
       indexLayerId++;
@@ -150,7 +184,7 @@ var filter = (function() {
   };
 
   /**
-   *
+   * Select wanted layer in filter panel
    */
   var _selectLayer = function(element) {
     $("#advancedFilter-" + _currentSelectedLayer).hide();
@@ -163,7 +197,7 @@ var filter = (function() {
    * @param {string} layerId The layer id to be filter
    *
    **/
-  var _updateFeaturesDistinctValues = function(layerId) {// Parse all params to create panel
+  var _updateFeaturesDistinctValues = function(layerId) { // Parse all params to create panel
 
     // for given attributes array update values
     var layerFiltersParams = _layersFiltersParams.get(layerId);
@@ -172,13 +206,12 @@ var filter = (function() {
     var source = mviewer.getLayer(layerId).layer.getSource();
     var features = source instanceof ol.source.Cluster ? source.getSource().getFeatures() : source.getFeatures();
 
-    // Parse all params to create panel
+    // Parse all params to get wanted values
     for (var index in layerFiltersParams) {
 
       // init current filters values
       layerFiltersParams[index].currentValues = layerFiltersParams[index].currentValues ? layerFiltersParams[index].currentValues : [];
       layerFiltersParams[index].currentRegexValues = layerFiltersParams[index].currentRegexValues ? layerFiltersParams[index].currentRegexValues : [];
-
 
       // undefined if first loop
       if (layerFiltersParams[index].availableValues == undefined || layerFiltersParams[index].updateOnChange) {
@@ -187,44 +220,66 @@ var filter = (function() {
         layerFiltersParams[index].availableValues = [];
 
         features.forEach(feature => {
-
-          // If feature is visible and value not null
-          if ((visibleFeatures.length == 0 || visibleFeatures.includes(feature.getId())) && !_isEmpty(feature.get(layerFiltersParams[index].attribut))) {
-
-            // for date type
-            if (layerFiltersParams[index].type == "date") {
-
-              if (!_isEmpty(layerFiltersParams[index].attribut[0]) && !_isEmpty(layerFiltersParams[index].attribut[0])) {
-                var startDate = _stringToDate(feature.get(layerFiltersParams[index].attribut[0]));
-                var endDate = _stringToDate(feature.get(layerFiltersParams[index].attribut[1]));
-
-                if (layerFiltersParams[index].availableValues.length == 0 || startDate <= layerFiltersParams[index].availableValues[O]) {
-                  layerFiltersParams[index].availableValues[O] = startDate;
-                }
-                if (layerFiltersParams[index].availableValues.length == 0 || endDate <= layerFiltersParams[index].availableValues[O]) {
-                  layerFiltersParams[index].availableValues[1] = endDate;
-                }
-              }
-            } else {
-              // if needed, split values with ; Feature values can be one String separate by ;
-              // TODO see if separator need to be put in config
-              var results = (feature.get(layerFiltersParams[index].attribut)).split(';');
-
-              results.forEach(result => {
-
-                // if new value
-                if (layerFiltersParams[index].availableValues.indexOf(result) < 0) {
-                  layerFiltersParams[index].availableValues.push(result);
-                }
-              });
-            }
+          // cluster case
+          if (feature.get("features")) {
+            feature.get("features").forEach(feature => {
+              _checkDistinctValues(feature, visibleFeatures, layerFiltersParams[index]);
+            });
+          } else {
+            _checkDistinctValues(feature, visibleFeatures, layerFiltersParams[index]);
           }
         });
+
         layerFiltersParams[index].availableValues.sort();
       }
-
     }
+  };
 
+  /**
+   * Check in feature properties if value is already listed,
+   * if not listed it
+   * @param {ol.Feature} feature the current feature
+   * @param {Array} visibleFeatures array of visibile feature uid
+   * @param {Object} filtersParams filter params information
+   */
+  var _checkDistinctValues = function(feature, visibleFeatures, filtersParams) {
+
+    // If feature is visible and value not null
+    if (visibleFeatures.length == 0 || visibleFeatures.includes(ol.util.getUid(feature))) {
+
+      // for date type
+      if (filtersParams.type == "date") {
+
+        if (!_isEmpty(feature.get(filtersParams.attribut[0])) && !_isEmpty(feature.get(filtersParams.attribut[1]))) {
+          var startDate = _stringToDate(feature.get(filtersParams.attribut[0]));
+          var endDate = _stringToDate(feature.get(filtersParams.attribut[1]));
+
+          if (typeof filtersParams.availableValues[1] === "undefined" || startDate <= filtersParams.availableValues[1]) {
+            filtersParams.availableValues[1] = startDate;
+          }
+          if (typeof filtersParams.availableValues[0] === "undefined" || endDate >= filtersParams.availableValues[0]) {
+            filtersParams.availableValues[0] = endDate;
+          }
+        }
+      } else if (!_isEmpty(feature.get(filtersParams.attribut))) {
+
+        // if needed, split values with specified separatore
+        if (filtersParams.dataSeparator) {
+          var results = (feature.get(filtersParams.attribut)).split(filtersParams.dataSeparator);
+
+          results.forEach(result => {
+
+            // if new value
+            if (filtersParams.availableValues.indexOf(result) < 0) {
+              filtersParams.availableValues.push(result);
+            }
+          });
+        } else if (filtersParams.availableValues.indexOf(feature.get(filtersParams.attribut)) < 0) {
+          filtersParams.availableValues.push(feature.get(filtersParams.attribut));
+        }
+
+      }
+    }
   };
 
   /**
@@ -342,12 +397,14 @@ var filter = (function() {
 
     // If alreadyExist, juste update params values
     if ($('#' + id).length) {
+      $("#" + id).tagsinput('destroy');
       // Update tagsinput params
       $("#" + id).tagsinput({
         typeahead: {
           source: params.availableValues
         },
-        freeInput: false
+        freeInput: false,
+        confirmKeys: [13, 188]
       });
     } else {
 
@@ -369,7 +426,8 @@ var filter = (function() {
         typeahead: {
           source: params.availableValues
         },
-        freeInput: false
+        freeInput: false,
+        confirmKeys: [13, 188]
       });
 
       //EVENT
@@ -384,8 +442,12 @@ var filter = (function() {
 
       $("#" + clearId).on('click', function(event) {
         $("#" + id).tagsinput('removeAll');
-        _removeFilterElementFromList(layerId, params.attribut, null);
-        _filterFeatures(layerId);
+        var layerFiltersParams = _layersFiltersParams.get(layerId);
+        // test is at least one filter for this attribut exist
+        if (layerFiltersParams.filter(f => f.attribut == params.attribut && f.currentValues.length).length) {
+          _removeFilterElementFromList(layerId, params.attribut, null);
+          _filterFeatures(layerId);
+        }
       });
 
       $("#" + id).on('itemRemoved', function(event) {
@@ -406,28 +468,40 @@ var filter = (function() {
     // for type date, two parameters are availables
     // create unique id with first parameter
     var id = "filterDate-" + layerId + "-" + params.attribut[0];
-    var clearId = "filterClear-" + layerId + "-" + params.attribut;
+    var clearId = "filterClear-" + layerId + "-" + params.attribut[0];
 
     if (!$('#' + id).length) {
       var _datePicker = [
         '<div class="form-group form-group-timer mb-2 mr-sm-2">',
         '<div class="form-check filter-legend">',
         '<legend > ' + params.label + ' </legend>',
-        '<span id=' + clearId + ' class="filter-clear glyphicon glyphicon-trash',
+        '<span id=' + clearId + ' class="filter-clear glyphicon glyphicon-trash"',
         ' data-toggle="filter-tooltip" data-original-title="Réinitaliser ce filtre"></span>',
         '</div>',
       ];
       _datePicker.push('<input type="text" class="form-control" id="' + id + '" />');
       _datePicker.push('</div>');
       $("#" + divId).append(_datePicker.join(""));
+
+      // manage datepicker external clear
+      $("#" + clearId).click(function(e) {
+        e.preventDefault();
+        $("#" + id).datepicker('setDate', null);
+        var layerFiltersParams = _layersFiltersParams.get(layerId);
+        // test is at least one filter for this attribut exist
+        if (layerFiltersParams.filter(f => f.attribut == params.attribut && f.currentValues.length).length) {
+          _removeFilterElementFromList(layerId, params.attribut, null);
+          _filterFeatures(layerId);
+        }
+      });
     }
 
     $("#" + id).datepicker({
       format: "yyyy-mm-dd",
       language: "fr",
       autoclose: true,
-      startDate: params.availableValues[0],
-      endDate: params.availableValues[1],
+      startDate: params.availableValues[1],
+      endDate: params.availableValues[0],
       clearBtn: true,
       todayHighlight: true
     });
@@ -487,8 +561,12 @@ var filter = (function() {
     }
 
     $("#" + clearId).on('click', function(event) {
-      _removeFilterElementFromList(layerId, params.attribut, null);
-      _filterFeatures(layerId);
+      var layerFiltersParams = _layersFiltersParams.get(layerId);
+      // test is at least one filter for this attribut exist
+      if (layerFiltersParams.filter(f => f.attribut == params.attribut && f.currentValues.length).length) {
+        _removeFilterElementFromList(layerId, params.attribut, null);
+        _filterFeatures(layerId);
+      }
     });
   };
 
@@ -542,6 +620,20 @@ var filter = (function() {
         }
       });
     }
+
+    var source = mviewer.getLayer(layerId).layer.getSource();
+    // update cluster information, test if all filter are cleared to reset view
+    if (source instanceof ol.source.Cluster) {
+
+      var atLeasteOnFilter = false;
+      layerFiltersParams.forEach(function(filter, index, array) {
+        if (filter.currentValues.length > 0) {
+          atLeasteOnFilter = true;
+        }
+      });
+      source.setIsFilter(atLeasteOnFilter);
+    }
+
   };
 
   /**
@@ -622,10 +714,11 @@ var filter = (function() {
     // Check if ClusterLayer
     var featuresToBeFiltered = source instanceof ol.source.Cluster ? source.getSource().getFeatures() : source.getFeatures();
     var newVisibleFeatures = [];
+    var extent;
 
     // if zoomOnFeatures enable create an empty extent
     if (mviewer.customComponents.filter.config.options.zoomOnFeatures) {
-      var extent = ol.extent.createEmpty();
+      extent = ol.extent.createEmpty();
     }
 
     featuresToBeFiltered.forEach(feature => {
@@ -655,9 +748,15 @@ var filter = (function() {
       // Hide features
       if (atLeastOneFilter && hideFeature) {
         feature.setStyle(new ol.style.Style({}));
+        feature.hidden = hideFeature;
+        // update cluster information to avoir clustering
+        if (source instanceof ol.source.Cluster) {
+          source.setIsFilter(true);
+        }
       } else {
+        feature.hidden = hideFeature;
         feature.setStyle(null);
-        newVisibleFeatures.push(feature.getId());
+        newVisibleFeatures.push(ol.util.getUid(feature));
         // Extend creation if zoomOnFeatures enable
         if (mviewer.customComponents.filter.config.options.zoomOnFeatures) {
           ol.extent.extend(extent, feature.getGeometry().getExtent());
@@ -666,13 +765,11 @@ var filter = (function() {
     });
     _visibleFeatures.set(layerId, newVisibleFeatures);
     // zoom on features
-    if (mviewer.customComponents.filter.config.options.zoomOnFeatures) {
+    if (mviewer.customComponents.filter.config.options.zoomOnFeatures && !ol.extent.isEmpty(extent)) {
 
-      if (!ol.extent.isEmpty(extent)) {
-        // add buffer arround extent
-        var bufferedExtent = ol.extent.buffer(extent, ol.extent.getWidth(extent) / 2);
-        mviewer.getMap().getView().fit(bufferedExtent);
-      }
+      // add buffer arround extent
+      var bufferedExtent = ol.extent.buffer(extent, ol.extent.getWidth(extent) / 2);
+      mviewer.getMap().getView().fit(bufferedExtent);
     }
     _manageFilterPanel(layerId);
   };
@@ -705,7 +802,8 @@ var filter = (function() {
   };
 
   /**
-   *
+   * _clearFilter from a given id
+   * @param {String} id - example button-plage-grand_territoire
    */
   var _clearFilter = function(id) {
     // get information for elment id ( type-layerid-attribut-index)
@@ -714,8 +812,12 @@ var filter = (function() {
     var layerId = filtreInformation[1];
     var attribut = filtreInformation[2];
 
-    _removeFilterElementFromList(layerId, attribut, null);
-    _filterFeatures(layerId);
+    var layerFiltersParams = _layersFiltersParams.get(layerId);
+    // test is at least one filter for this attribut exist
+    if (layerFiltersParams.filter(f => f.attribut == attribut && f.currentValues.length).length) {
+      _removeFilterElementFromList(layerId, attribut, null);
+      _filterFeatures(layerId);
+    }
   };
 
   /**
@@ -763,7 +865,17 @@ var filter = (function() {
     // Parse all layer to get params
     for (var [layerId, params] of _layersFiltersParams) {
 
-      _clearFilterFeatures(layerId);
+      var layerFiltersParams = _layersFiltersParams.get(layerId);
+      // test is at least one filter for this attribut exist
+      if (layerFiltersParams.filter(f => f.currentValues.length).length) {
+        _clearFilterFeatures(layerId);
+
+        var source = mviewer.getLayer(layerId).layer.getSource();
+        // update cluster information
+        if (source instanceof ol.source.Cluster) {
+          source.setIsFilter(false);
+        }
+      }
     }
   };
 
@@ -780,4 +892,3 @@ var filter = (function() {
 })();
 
 new CustomComponent("filter", filter.init);
-//filter.configFilterableLayer();
