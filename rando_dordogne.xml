@@ -53,8 +53,8 @@
                 searchengine="fuse"
                 fusesearchkeys="name"
                 fusesearchresult="{{name}}"
-                tooltip="false"
-                tooltipenable="false"
+                tooltip="true"
+                tooltipenable="true"
                 tooltipcontent=""               
                 attribution="ep">
                 <template url="apps/rando_dordogne/templates/rando_boucle.mst"></template>
